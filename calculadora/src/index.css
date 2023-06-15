@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Oswald-VariableFont_wght';
+  src: url('./fonts/Oswald-VariableFont_wght.ttf');
+}
+
+* {
+  font-family: 'Oswald-VariableFont_wght', monospace;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, #3B3D47,  #33353D, #282A30);
+}
