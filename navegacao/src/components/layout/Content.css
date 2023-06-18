@@ -1,0 +1,7 @@
+.Content {
+    display: flex;
+    flex: 1;
+    background-color: rgb(195, 235, 235);
+    padding: 30px;
+    color: rgb(24, 24, 126);
+}
