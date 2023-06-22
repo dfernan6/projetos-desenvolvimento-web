@@ -36,3 +36,7 @@
 .Menu li a:hover {
     background: #00000020;
 }
+
+.Menu li a:active {
+    background: #00000077;
+}
