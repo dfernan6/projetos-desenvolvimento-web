@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
-import UseCallbackButtons from './useCallbackButtons'
+import UseCallbackButtons from './UseCallbackButtons'
 
 const UseCallback = (props) => {
     const [count, setCount] = useState(0)
