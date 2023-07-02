@@ -235,6 +235,7 @@ git add
 git commit -m "Mensagem descrevendo alterações"
 git push -u origin nomeDaBranch   
 git push
+git rebase --abort = Ajuda a resolver conflitos entre atualização das branchs
 Se ainda não sincronizou git pull
 
 PEgar documento SSL da Trybe
@@ -354,7 +355,9 @@ criado 2 for e um if pra imprimir o resultado >:D
 
 .forEach()
 Caso você precise executar algum código para cada elemento do Array, executar um forEach é muito mais simples do que criar um for ou while, já que não precisamos declarar variáveis de controle.
------------------------------------------------------------
+-=======-=======-=======-=======-=======-=======-=======-=======-=======
+NodeJs
+
 Problemas com a versao NodeJs
 
 Digitado >> which node >> Para ver a localização e versão do Node
@@ -364,9 +367,8 @@ nvm install node >> Instalação do novo pacote Node e npm
 Maneira de atualizar o create-react-app >> npx create-react-app@5.0.0 my-app
 
 -------------
-git rebase --abort
-Ajuda a resolver conflitos entre atualização das branchs
--=======-=======-=======-=======-=======-=======-=======-=======-=======
+
+
 
 
 
