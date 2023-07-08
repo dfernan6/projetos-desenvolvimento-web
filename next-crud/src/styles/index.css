@@ -17,7 +17,7 @@ body {
 .layout {
     display: flex;
     flex-direction: column;
-    background-color: rgba(28, 29, 29, 0.863);
+    background: linear-gradient(to right,#d4d4d4, #b3b3b3,#e6e6e9,#b0b1b6,#7c7d7e);
     color: gray;
     border-radius: 10px;
     width: 600px;
@@ -33,4 +33,26 @@ body {
 
 .titulo {
     padding: 10px;
+    color: #4d4f50;
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(174, 180, 180);
+    padding: 5px;
+    color: black;
+}
+
+table {
+    width: 100%;
+    opacity: 75%;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+}
+
+td {
+    background-color: rgb(77, 68, 68);
+    color: rgb(221, 213, 213);
+    text-align: center;
 }

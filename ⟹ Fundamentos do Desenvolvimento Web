@@ -366,7 +366,126 @@ nvm install node >> Instalação do novo pacote Node e npm
 
 Maneira de atualizar o create-react-app >> npx create-react-app@5.0.0 my-app
 
--------------
+-------------------------------------------------------------------------------
+
+Pode dar erros ao montar a classe no NextJs, formato ts
+
+export default class Cliente {
+    private id: string
+    private nome: string
+    private idade: number
+
+    constructor(nome: string, idade: number, id: string = null) {
+        this.nome = nome
+        this.idade = idade
+        this.id = id
+    }
+
+    get id() {
+        return this.id
+    }
+}
+
+Se esse erro houver, ir até o documento tsconfig.json on aparecerá assim
+
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+
+
+o correto será adicionar o objeto "target:", onde automaticamente assim que acionado, ele está
+ com atributo ES3 no qual deverá ser alterado por ES2015.
+ Onde terminará montado assim:
+ 
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+
+Logo apó essa configuração no tsconfig.json (acima), você vai alterar o arquivo TS que no qual
+pertence a primeira figura.
+
+export default class Cliente {
+   #id: string
+   #nome: string
+   #idade: number
+
+    constructor(nome: string, idade: number, id: string = null) {
+        this.#nome = nome
+        this.#idade = idade
+        this.#id = id
+    }
+
+    get id() {
+        return this.#id
+    }
+
+    get nome() {
+        return this.#nome
+    }
+
+    get idade() {
+        return this.#idade
+    }
+}
+
+
+
+
+
+
 
 
 
