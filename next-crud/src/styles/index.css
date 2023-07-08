@@ -13,3 +13,24 @@ body {
     border-radius: 10px;
     border:rgb(129, 134, 134) solid;
 }
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(28, 29, 29, 0.863);
+    color: gray;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.border {
+    border:rgb(0, 0, 0) solid;
+}
+
+.conteudo {
+    padding: 10px;
+}
+
+.titulo {
+    padding: 10px;
+}
