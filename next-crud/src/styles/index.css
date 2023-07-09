@@ -59,9 +59,26 @@ td {
 }
 
 button {
-    background-color: #89a5b3;
+    background-color: #53adda;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #43555e;
+    background-color: #1182bb;
+}
+
+.green {
+    background-color: #22e278;
+}
+
+.blue {
+    background-color: #22a2e2;
+}
+
+.gray {
+    background-color: #aeb6bb;
 }

@@ -1,3 +1,4 @@
+import Botao from "../components/Botao";
 import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 import Cliente from "../core/Cliente";
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <div className="center">
       <Layout titulo="Cadastro Simples">
+        <Botao cor='green'>Novo cliente</Botao>
         <Tabela clientes={clientes}
         clienteSelecionado={clienteSelecionado}
         clienteExcluido={clienteExcluido}
