@@ -11,10 +11,21 @@ export default function Home() {
     new Cliente('Cláudio', 33,'4'),
   ]
 
+  function clienteSelecionado(cliente: Cliente) {
+    console.log(cliente.nome)
+  }
+
+  function clienteExcluido(cliente: Cliente) {
+    console.log('Excluindo...' + cliente.nome)
+  }
+
   return (
     <div className="center">
       <Layout titulo="Cadastro Simples">
-        <Tabela clientes={clientes}></Tabela>
+        <Tabela clientes={clientes}
+        clienteSelecionado={clienteSelecionado}
+        clienteExcluido={clienteExcluido}
+        ></Tabela>
       </Layout>
     </div>
   )
