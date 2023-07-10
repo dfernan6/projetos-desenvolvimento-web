@@ -22,17 +22,34 @@ export default function Home() {
     console.log('Excluindo...' + cliente.nome)
   }
 
-  const [visivel, setVisivel] = useState()
+  function salvarCliente(cliente: Cliente) {
+    console.log(cliente)
+    setVisivel('tabela')
+  }
+
+  const [visivel, setVisivel] = useState<'tabela' | 'form'>('tabela')
 
   return (
     <div className="center">
       <Layout titulo="Cadastro Simples">
-        <Botao cor='blue'>Novo cliente</Botao>
-        <Tabela clientes={clientes}
-        clienteSelecionado={clienteSelecionado}
-        clienteExcluido={clienteExcluido}
-        ></Tabela>
-        <Formulario />
+        {visivel === 'tabela' ? (
+          <>
+          <Botao cor='blue'
+            onClick={() => setVisivel('form')}>
+              Novo cliente
+          </Botao>
+            <Tabela clientes={clientes}
+              clienteSelecionado={clienteSelecionado}
+              clienteExcluido={clienteExcluido}
+            > 
+            </Tabela>
+            </>
+        ) : (
+          <Formulario
+          cliente={clientes[2]}
+          clienteMudou={salvarCliente}
+          cancelado={() => setVisivel('tabela')} />
+        )}       
       </Layout>
     </div>
   )

@@ -5,6 +5,8 @@ import Botao from "./Botao";
 
 interface FormularioProps {
     cliente: Cliente
+    clienteMudou?: (cliente: Cliente) => void
+    cancelado?: () => void
 }
 
 export default function Formulario(props) {
@@ -17,7 +19,7 @@ export default function Formulario(props) {
             <Entrada
                 somenteLeitura
                 texto="Código"
-                valor="Teste"
+                valor={id}
             />
             ) : false}
             <Entrada
@@ -32,10 +34,13 @@ export default function Formulario(props) {
                valorMudou={setIdade}
             />
             <div>
-                <Botao cor='gray'>
+                <Botao cor='gray'
+                onClick={() => props.clienteMudou?.(new Cliente(nome, idade, id))}
+                >
                     confirmar
                 </Botao>
-                <Botao cor='red'>
+                <Botao cor='red'
+                onClick={props.cancelado}>
                     Cancelar
                 </Botao>
             </div>

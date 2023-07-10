@@ -65,6 +65,7 @@ button {
     border-radius: 5px;
     color: white;
     font-weight: bold;
+    border: rgb(49, 42, 42) solid 2px;
 }
 
 button:hover {
@@ -97,6 +98,7 @@ input {
 
 .forms {
     display: flex;
+    flex-direction: column;
     background-color: #ffffff23;
     margin: 5px;
     border-radius: 10px;
