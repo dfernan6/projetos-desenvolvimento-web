@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Botao from "../components/Botao";
+import Formulario from "../components/Formulario";
 import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 import Cliente from "../core/Cliente";
@@ -20,14 +22,17 @@ export default function Home() {
     console.log('Excluindo...' + cliente.nome)
   }
 
+  const [visivel, setVisivel] = useState()
+
   return (
     <div className="center">
       <Layout titulo="Cadastro Simples">
-        <Botao cor='green'>Novo cliente</Botao>
+        <Botao cor='blue'>Novo cliente</Botao>
         <Tabela clientes={clientes}
         clienteSelecionado={clienteSelecionado}
         clienteExcluido={clienteExcluido}
         ></Tabela>
+        <Formulario />
       </Layout>
     </div>
   )

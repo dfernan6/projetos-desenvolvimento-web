@@ -1,6 +1,5 @@
 body {
     background-color: rgb(69, 73, 73);
-    color: aliceblue;
     padding: 50px;
 }
 
@@ -29,6 +28,7 @@ body {
 
 .conteudo {
     padding: 10px;
+    color: #1b1b1b;
 }
 
 .titulo {
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #1182bb;
+    background-color: #1717184b;
 }
 
 .green {
@@ -81,4 +81,24 @@ button:hover {
 
 .gray {
     background-color: #aeb6bb;
+}
+
+.red {
+    background-color: #f50c0c;
+}
+
+input {
+    border-radius: 10px;
+    background-color: #e6e6e9;
+    padding: 10px;
+    margin: 5px;
+    border: rgb(49, 42, 42) solid 2px;
+}
+
+.forms {
+    display: flex;
+    background-color: #ffffff23;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
 }
