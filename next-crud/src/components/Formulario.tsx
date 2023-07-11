@@ -35,7 +35,7 @@ export default function Formulario(props) {
             />
             <div>
                 <Botao cor='gray'
-                onClick={() => props.clienteMudou?.(new Cliente(nome, idade, id))}
+                onClick={() => props.clienteMudou?.(new Cliente(nome, +idade, id))}
                 >
                     confirmar
                 </Botao>
