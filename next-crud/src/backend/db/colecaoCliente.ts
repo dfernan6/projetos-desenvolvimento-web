@@ -1,7 +1,5 @@
-import { firebase } from 'firebase';
 import Cliente from "../../core/Cliente";
 import ClienteRepositorio from "../../core/ClienteRepositorio";
-import { query } from 'firebase/firestore';
 
 export default class ColecaoCliente implements ClienteRepositorio {
 
