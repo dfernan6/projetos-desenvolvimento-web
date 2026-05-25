@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dfernan6 | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dfernan6 | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-  <div class="header-container">
-    <div class="logo">
-      <div class="logo-icon">D</div>
-      <span class="logo-text">Portfolio</span>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-icon">D</div>
+        <span class="logo-text">Portfolio</span>
+      </div>
+      <!-- Dark mode toggle -->
+      <button id="toggle-theme" class="nav-button">🌙 Dark Mode</button>
+        <select id="language-select">
+          <option value="pt">🇧🇷 PT</option>
+          <option value="en">🇺🇸 EN</option>
+          <option value="de">🇩🇪 DE</option>
+        </select>
     </div>
-    <!-- Dark mode toggle -->
-    <button id="toggle-theme" class="nav-button">🌙 Dark Mode</button>
-  </div>
-</header>
-    <div id="app"></div>
-    <script src="script.js"></script>
+  </header>
+
+  <div id="app"></div>
+
+  <!-- Load your JS files in order -->
+  <script src="js/state.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
