@@ -94,6 +94,19 @@ function renderPage() {
   `;
 }
 
+function attachExperienciaEvents() {
+  document.querySelectorAll('.skills').forEach(skill => {
+    skill.addEventListener('click', () => {
+      const hidden = skill.nextElementSibling.nextElementSibling || skill.nextElementSibling;
+      if (hidden && hidden.classList.contains('textoOculto')) {
+        hidden.classList.toggle('show');
+        const arrow = skill.querySelector('.arrow');
+        if (arrow) arrow.textContent = hidden.classList.contains('show') ? '▼' : '◀';
+      }
+    });
+  });
+}
+
 function render() {
   document.getElementById('app').innerHTML = `
     <header>
@@ -147,3 +160,6 @@ function changeLanguage(lang) {
   state.language = lang;
   render();
 }
+
+  // Attach events after DOM is updated
+  attachExperienciaEvents();

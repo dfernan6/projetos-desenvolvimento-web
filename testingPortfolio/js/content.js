@@ -33,15 +33,23 @@ const content = {
         { name: 'Comunicação', level: 90 },
         { name: 'Trabalho em Equipe', level: 95 },
         { name: 'Resolução de Problemas', level: 88 },
-        { name: 'Adaptabilidade', level: 92 },
-        { name: 'Gestão de Tempo', level: 85 }
+        { name: 'Empatia', level: 92 },
+        { name: 'Gestão de Tempo', level: 85 },
+        { name: 'Dinamismo', level: 90 },
+        { name: 'Conhecimento', level: 95 },
+        { name: 'Criatividade', level: 95 },
+        { name: 'Organização', level: 92 },
+        { name: 'Liderança', level: 85 },
+        { name: 'Resiliência', level: 88 },
+        { name: 'Compromisso', level: 92 },
+        { name: 'Curiosidade', level: 97 }
       ]
     },
     experiencia: {
       title: 'Experiências',
       html: `
 <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-<h3><span class="arrow" >◀</span> Positivo S+</h3>
+<h3>Positivo S+</h3>
 </div>
 <div class="subTexto">
 <span><b>Analista de suporte bilingue</b> 🗓️<i> Abril 2025 - Julho 2025</i></span>
@@ -53,7 +61,7 @@ const content = {
 </p>
 </div>
 <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-<h3><span class="arrow" >◀</span> Tech Mahindra</h3>
+<h3>Tech Mahindra</h3>
 </div>
 <div class="subTexto">
 <span><b>Analista de atendimento</b> 🗓️  <i>Agosto 2024 - Fevereiro 2025</i></span>
@@ -65,7 +73,7 @@ const content = {
 </p>
 </div>
      <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-    <h3><span class="arrow" >◀</span>  NTT DATA</h3>
+    <h3>NTT DATA</h3>
     </div>
     <div class="subTexto">
 <span><b>PTN1 Analista de suporte BPO Jr.</b> 🗓️ <i>Abril 2023 - Junho 2024</i></span>
@@ -78,7 +86,7 @@ const content = {
     </p>
 </div>
 <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-<h3><span class="arrow" >◀</span> TCS - Tata Consultancy Services</h3>
+<h3>TCS - Tata Consultancy Services</h3>
 </div>
 <div class="subTexto">
 <span><b>Analista de TI Jr.</b> 🗓️ <i>Agosto 2021 - Agosto 2022</i></span>
@@ -91,7 +99,7 @@ const content = {
 </p>
 </div>
 <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-<h3><span class="arrow" >◀</span> Capgemini</h3>
+<h3>Capgemini</h3>
 </div>
 <div class="subTexto">
 <span><b>Técnico de Service Desk bilingue</b> 🗓️ <i>Outubro 2018 - Abril 2021</i></span>
@@ -106,7 +114,7 @@ const content = {
 <br>
 <h1>Experiências autônomas</h1>
 <div class="skills" onclick="this.nextElementSibling.classList.toggle('show')">
-<h3><span class="arrow" >◀</span> Web developer </h3>
+<h3>Web developer </h3>
 </div>
 <div class="textoOculto">
 <p> Desenvolvedor Web com sólida experiência em criação e manutenção de aplicações responsivas e escaláveis. Ao longo da carreira, adquiri competências em front-end e back-end, atuando com tecnologias como HTML5, CSS3, JavaScript, React, Node.js,PHP e mais outras estão na aba de Hard Skills. Tenho histórico comprovado de:<br><br>
@@ -117,9 +125,8 @@ const content = {
  🤝 <b>Trabalho em equipe:</b> Participação ativa em squads multidisciplinares, contribuindo para soluções inovadoras e alinhadas aos objetivos do cliente.<br>
 </p>
 </div>
-</div>
 <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-<h3><span class="arrow" >◀</span> Mozilla Builder</h3>
+<h3>Mozilla Builder</h3>
 </div>
 <div class="subTexto">
 <img class="simbolos" draggable="false" src="./imagens/mozilla.PNG">
@@ -135,7 +142,7 @@ const content = {
 </p>
 </div>
 <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-<h3><span class="arrow" >◀</span> GNU Developer </h3>
+<h3>GNU Developer </h3>
 </div>
 <div class="subTexto">
 <h5>Linguagens utilizadas:</h5>
@@ -156,10 +163,24 @@ const content = {
 - Promover o software livre: Além da parte técnica, há um compromisso ideológico com a liberdade de uso, modificação e distribuição do software.
 </p>
 </div>
-<br>
-</div>
-</section>
       `
+    },
+  hardskills: {
+                title: 'Hard Skills',
+                categories: [
+                    {
+                        name: 'Frontend',
+                        skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue.js', 'Tailwind']
+                    },
+                    {
+                        name: 'Backend',
+                        skills: ['Node.js', 'Python', 'PHP', 'SQL', 'MongoDB', 'REST APIs']
+                    },
+                    {
+                        name: 'DevOps',
+                        skills: ['Git', 'GitHub', 'Docker', 'CI/CD', 'Linux']
+                    }
+                ]
     }
   },
 
@@ -180,15 +201,23 @@ const content = {
       }
     },
     softskills: {
-      title: 'Soft Skills',
-      skills: [
-        { name: 'Communication', level: 90 },
-        { name: 'Teamwork', level: 95 },
-        { name: 'Problem Solving', level: 88 },
-        { name: 'Adaptability', level: 92 },
-        { name: 'Time Management', level: 85 }
-      ]
-    },
+  title: 'Soft Skills',
+  skills: [
+    { name: 'Communication', level: 90 },
+    { name: 'Teamwork', level: 95 },
+    { name: 'Problem Solving', level: 88 },
+    { name: 'Empathy', level: 92 },
+    { name: 'Time Management', level: 85 },
+    { name: 'Dynamism', level: 90 },
+    { name: 'Knowledge', level: 95 },
+    { name: 'Creativity', level: 88 },
+    { name: 'Organization', level: 92 },
+    { name: 'Leadership', level: 85 },
+    { name: 'Resilience', level: 88 },
+    { name: 'Commitment', level: 97 },
+    { name: 'Curiosity', level: 92 }
+  ]
+},
     experiencia: {
       title: 'Experiences',
       html: `
@@ -319,6 +348,23 @@ const content = {
 </div>
       `
     },
+  hardskills: {
+                title: 'Hard Skills',
+                categories: [
+                    {
+                        name: 'Frontend',
+                        skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue.js', 'Tailwind']
+                    },
+                    {
+                        name: 'Backend',
+                        skills: ['Node.js', 'Python', 'PHP', 'SQL', 'MongoDB', 'REST APIs']
+                    },
+                    {
+                        name: 'DevOps',
+                        skills: ['Git', 'GitHub', 'Docker', 'CI/CD', 'Linux']
+                    }
+                ]
+  }
   },
 
   de: {
@@ -338,14 +384,22 @@ const content = {
       }
     },
     softskills: {
-      title: 'Soft Skills',
+      title: 'Soziale Kompetenzen',
       skills: [
         { name: 'Kommunikation', level: 90 },
         { name: 'Teamarbeit', level: 95 },
         { name: 'Problemlösung', level: 88 },
-        { name: 'Anpassungsfähigkeit', level: 92 },
-        { name: 'Zeitmanagement', level: 85 }
-      ]
+        { name: 'Empathie', level: 92 },
+        { name: 'Zeitmanagement', level: 85 },
+        { name: 'Dynamik', level: 90 },
+        { name: 'Wissen', level: 95 },
+        { name: 'Kreativität', level: 88 },
+        { name: 'Organisation', level: 92 },
+        { name: 'Führung', level: 85 },
+        { name: 'Resilienz', level: 88 },
+        { name: 'Engagement', level: 92 },
+        { name: 'Neugier', level: 85 }
+        ]
     },
   experiencia: {
       title: 'Erfahrungen',
@@ -477,6 +531,23 @@ const content = {
 </div>
       `
     },
+  hardskills: {
+                title: 'Hard Skills',
+                categories: [
+                    {
+                        name: 'Frontend',
+                        skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue.js', 'Tailwind']
+                    },
+                    {
+                        name: 'Backend',
+                        skills: ['Node.js', 'Python', 'PHP', 'SQL', 'MongoDB', 'REST APIs']
+                    },
+                    {
+                        name: 'DevOps',
+                        skills: ['Git', 'GitHub', 'Docker', 'CI/CD', 'Linux']
+                    }
+                ]
+    }
   },
 };
 
