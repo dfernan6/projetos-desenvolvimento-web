@@ -77,10 +77,40 @@ function renderExperienciaPage() {
   return content[state.language].experiencia.html;
 }
 
+function renderProjetosPage() {
+  const page = content[state.language].projetos;
+  return `
+    <div class="space-y-6">
+      <h1>${page.title}</h1>
+      <p>${page.description}</p>
+      ${page.items.map(item => `
+        ${item.title ? `<div class="estavel"><h2>${item.title}</h2></div>` : ""}
+        <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
+          <h3><span class="arrow">◀</span> ${item.name}</h3>
+        </div>
+        <div class="subTexto">
+          <h5>Linguagens utilizadas:</h5>
+          ${item.languages.map(img => `<img class="simbolos" src="./imagens/${img}" draggable="false">`).join("")}
+        </div>
+        <div class="textoOculto">
+          <p>${item.description}</p>
+          <div class="video-wrapper">
+            <a href="${item.link}" target="_blank">
+              <video class="linkImg" src="${item.video}" muted loop autoplay></video>
+              <div class="video-overlay">Clique para ver o projeto</div>
+            </a>
+          </div>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
 function renderPage() {
   if (state.currentPage === 'home') return renderHomePage();
   if (state.currentPage === 'hardskills') return renderHardSkillsPage();
   if (state.currentPage === 'softskills') return renderSoftSkillsPage();
+  if (state.currentPage === 'projetos') return renderProjetosPage();
   if (state.currentPage === 'experiencia') return renderExperienciaPage();
   
   const page = content[state.language][state.currentPage];
@@ -102,6 +132,22 @@ function attachExperienciaEvents() {
         hidden.classList.toggle('show');
         const arrow = skill.querySelector('.arrow');
         if (arrow) arrow.textContent = hidden.classList.contains('show') ? '▼' : '◀';
+      }
+    });
+  });
+}
+
+function attachProjetosEvents() {
+  document.querySelectorAll('.skills').forEach(skill => {
+    skill.addEventListener('click', () => {
+      // find the hidden block right after the skill
+      const hidden = skill.nextElementSibling.nextElementSibling || skill.nextElementSibling;
+      if (hidden && hidden.classList.contains('textoOculto')) {
+        hidden.classList.toggle('show');
+        const arrow = skill.querySelector('.arrow');
+        if (arrow) {
+          arrow.textContent = hidden.classList.contains('show') ? '▼' : '◀';
+        }
       }
     });
   });
@@ -147,11 +193,6 @@ function render() {
       <div class="page-content">${renderPage()}</div>
     </main>
     
-    <footer>
-      <div class="footer-container">
-        <p>© Editado por <strong>Danilo Fernandes</strong></p>
-      </div>
-    </footer>
   `;
 }
 

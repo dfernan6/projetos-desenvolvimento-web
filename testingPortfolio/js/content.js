@@ -181,6 +181,197 @@ const content = {
                         skills: ['Git', 'GitHub', 'Docker', 'CI/CD', 'Linux']
                     }
                 ]
+    },
+      projetos: {
+      title: "Projetos",
+      description: "Projetos desenvolvidos em aulas, treinamentos e para empresas estão reunidos nesta seção",
+      items: [
+        {
+          title: "Projetos profissionais",
+          name: "Sabores da Lolô",
+          languages: ["nodejs.PNG","nextjs.PNG","tailwind.PNG","ts.PNG","html.PNG","postman.PNG","mongodb.PNG","react.PNG","vercel.png"],
+          description: `
+        <p>
+        Sabores da Lolô é uma aplicação web desenvolvida para facilitar o agendamento e gestão de pedidos de confeitaria artesanal.<br>
+        A plataforma permite que clientes escolham produtos como bolos, doces e salgados, definam datas de entrega com antecedência mínima por tipo de item, e finalizem o pedido com validações inteligentes e alertas dinâmicos.
+        <br><br>
+        🧑‍💻 <b>Tecnologias e arquitetura utilizadas:</b><br><br>
+        <b>TypeScript (TS):</b> utilizado em toda a base do projeto para garantir tipagem estática, segurança e escalabilidade no desenvolvimento.<br>
+        <b>Zod:</b> biblioteca de validação de esquemas usada para validar formulários e dados do cliente, com mensagens de erro traduzidas e personalizadas.<br>
+        <b>React + Context API:</b> gerenciamento de estado global para carrinho, cliente e pedidos, com sincronização entre componentes e persistência local.<br>
+        <b>API RESTful:</b> comunicação entre frontend e backend via rotas HTTP (POST, PUT, GET), com envio de dados estruturados em JSON.<br>
+        <b>Next.js:</b> framework utilizado para renderização otimizada, rotas dinâmicas e integração com API routes.<br>
+        <b>Fetch API:</b> responsável por enviar e receber dados entre cliente e servidor, com tratamento de erros e feedback ao usuário.<br>
+        <b>MongoDB:</b> Banco de dados NoSQL utilizado para armazenamento de dados de clientes, carrinho e produtos<br>
+        <b>Alerta inteligente:</b> sistema de mensagens que informa o usuário sobre erros, confirmações e validações em tempo real.<br>
+        <b>Controle de carrinho com sincronização persistente:</b> o carrinho é sincronizado com o backend e armazenado localmente, evitando perda de dados durante a navegação.<br>
+        </p>
+      `,
+          video: "./imagens/saboresdaloloShort.mp4",
+          link: "https://saboresdalolo.vercel.app/"
+        },
+        {
+      title: "Aplicativos Mobile",
+      name: "FindWeather",
+      languages: [
+        "nodejs.PNG","expo.PNG","css.PNG","ts.PNG","html.PNG","reactNative.PNG"
+      ],
+      description: `
+        <p>
+        📱 <b>Funcionalidades Principais</b><br><br>
+        🔍 Busca por cidade: campo de pesquisa com ícone de lupa para localizar qualquer cidade.<br>
+        📍 <b>Localização via GPS:</b> botão com ícone de marcador para obter automaticamente o clima da posição atual.<br>
+        🌡️ <b>Previsão atual e estendida:</b> mostra temperatura, mínimas e máximas, condições climáticas e ícones ilustrativos.<br>
+        📅 <b>Previsão de 5 dias:</b> cards com resumo diário (ícone, temperatura, min/max).<br>
+        ⚠️ <b>Mensagens de erro:</b> feedback visual quando a cidade não é encontrada ou há falha na conexão.<br>
+        🌐 <b>Suporte multilíngue:</b> integração com react-i18next para tradução (ex.: português/inglês).<br>
+        🎨 <b>Interface responsiva:</b> design adaptado para mobile e web, com ícones e cores intuitivas.<br><br>
+        <b>Download:</b> 📦 <br>
+        <a href="application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk" download>
+          Clique aqui ou no vídeo para baixar o APK
+        </a><br>
+        <i>Instale diretamente no seu dispositivo Android. Ative “Fontes desconhecidas” nas configurações se necessário.</i>
+        </p>
+      `,
+      video: "./imagens/findWeather.mp4",
+      link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
+    },
+  {
+  name: "Art Pixels Mobile",
+  languages: [
+    "nodejs.PNG","expo.PNG","css.PNG","ts.PNG","html.PNG","reactNative.PNG"
+  ],
+  description: `
+    <p>
+    Aplicativo interativo para criação de arte em pixel, com paleta de cores otimizada, modos de uso personalizados e interface responsiva. Ideal para crianças e adultos explorarem criatividade com simplicidade.
+    <br><br>
+    📱 <b>Funcionalidades:</b><br><br>
+    <b>Paleta de cores clicável</b><br>
+    <b>Grade de pixels interativa</b><br>
+    <b>Modo Infantil e Modo Tradicional</b><br>
+    <b>Botão de limpeza rápida</b><br>
+    <b>Mensagem personalizada na tela inicial</b><br>
+    <b>Reconhecimento de versão anterior para atualização automática</b><br>
+    <br>
+    <b>Download:</b> 📦 <br>
+    <a href="application-ad18b872-4de1-4799-9260-0506da1169d9.apk" download>
+      Clique aqui ou no vídeo para baixar o APK
+    </a><br>
+    <i>Instale diretamente no seu dispositivo Android. Ative “Fontes desconhecidas” nas configurações se necessário.</i>
+    </p>
+  `,
+  video: "./imagens/art-pixels.mp4",
+  link: "application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
+},
+{
+  title: "Projetos de treinamento",
+  name: "App-Inicial",
+  languages: [
+    "nodejs.PNG","nextjs.PNG","tailwind.PNG","ts.PNG","html.PNG","react.PNG","vercel.png"
+  ],
+  description: `
+    <p>
+    Projeto desenvolvido com o objetivo de demonstrar diferentes abordagens na utilização de <b>Node.js</b> e <b>Tailwind CSS</b>.<br>
+    Foram aplicadas práticas de estilização com Tailwind para destacar sua agilidade e modularidade em comparação com estilos tradicionais.<br>
+    Além disso, parte do conteúdo foi estruturado com Next.js, evidenciando sua praticidade na renderização de páginas, roteamento automático e integração com <b>APIs</b>.<br>
+    O projeto também inclui testes básicos com <b>ESLint</b>, visando garantir padronização e qualidade no código <b>TypeScript.</b><br>
+    As imagens utilizadas são provenientes do serviço Unsplash Source, que atualmente requer autenticação para exibição, podendo ocasionar falhas na renderização das imagens.<br>
+    <i>Algumas seções foram implementadas apenas com <b>HTML</b>, o que pode gerar divergências na responsividade e no comportamento de renderização entre diferentes partes do projeto.</i>
+    </p>
+  `,
+  video: "./imagens/AppInicialVideo.mp4",
+  link: "https://dfernan6.vercel.app/"
+},
+{
+  name: "Fundamentos",
+  languages: [
+    "nodejs.PNG","redux.PNG","css.PNG","js.PNG","html.PNG","react.PNG","vercel.png"
+  ],
+  description: `
+    <p>
+    Este projeto utiliza <b>Node.js</b> como ambiente de execução para o <i>"backend"</i>, permitindo a criação de <b>APIs</b> rápidas e escaláveis com <b>JavaScript.</b><br>
+    O <b>ESLint</b> foi integrado para garantir a qualidade do código, identificando erros e promovendo boas práticas de desenvolvimento, acusando falhas na execução e solicitando correções para que o código tenha uma ótima resposta na execução.<br>
+    No <i>"frontend"</i>, o <b>Redux</b> desempenha um papel essencial na gestão de estado da aplicação, permitindo que diferentes componentes compartilhem e atualizem dados de forma previsível e organizada, especialmente útil em aplicações com múltiplas interações e atualizações dinâmicas.<br>
+    <b><i>Têm mais explicações sobre os modelos na aplicação.</i></b>
+    </p>
+  `,
+  video: "./imagens/fundamentosReact.mp4",
+  link: "https://dfernan6-react.vercel.app/"
+},
+{name: "#7DaysOfCode - React (Aluritter)",
+  languages: [
+    "vue.png","js.PNG","html.PNG","tailwind.PNG","react.PNG","vercel.png","firebase.PNG"
+  ],
+  description: `
+    <p>
+      <b>Aluritter</b><br><br>
+      Durante o desafio <strong>#7DaysOfCode</strong>, desenvolvi uma versão simplificada do Twitter 
+      (atualmente chamado de X) utilizando <strong>React</strong>.<br>
+      A aplicação foi projetada para consumir e enviar dados em tempo real através do <strong>Firebase</strong>, garantindo uma experiência dinâmica 
+      e interativa.<br><br>
+
+      <b><i>Tecnologias Utilizadas</i></b><br><br>
+      Vite<br>
+      JavaScript<br>
+      React<br>
+      Firebase<br>
+      Tailwind CSS<br><br>
+
+      <b><i>Objetivo</i></b><br><br>
+      O principal objetivo foi aplicar conceitos de desenvolvimento front-end moderno, integração com APIs externas 
+      e estilização responsiva, criando uma aplicação funcional que simula a dinâmica de uma rede social.
+    </p>
+  `,
+  video: "./imagens/aluritter.mp4",
+  link: "https://aluritter-dfernan6.vercel.app/"
+},
+{name: "#7DaysOfCode - JS e DOM",
+  languages: [
+    "css.PNG","js.PNG","html.PNG","bootstrap.PNG"
+  ],
+  description: `
+    <p>
+      Projeto desenvolvido como parte do desafio <b>Alura</b> <i>#7DaysOfCode</i>. 
+      Consiste em uma <b>Web</b> app para cadastro de convidados em uma lista de aniversários, exibindo apenas suas respectivas datas. 
+      Durante os sete dias, foram aplicados conceitos de DOM e JavaScript para implementar funcionalidades de cadastro, edição, exclusão e limpeza geral dos dados, 
+      utilizando o localStorage como servidor local para fins práticos.<br><br>
+
+      Foi utilizado conjunto de operações fundamentais <b>CRUD:</b><br><br>
+      <b>CRUD</b> é um acrônimo que representa as quatro operações básicas usadas em sistemas de gerenciamento de dados:<br>
+      - C – Create (Criar): adicionar novos dados<br>
+      - R – Read (Ler): consultar ou visualizar dados<br>
+      - U – Update (Atualizar): modificar dados existentes<br>
+      - D – Delete (Excluir): remover dados<br><br>
+      Essas operações são fundamentais em aplicações que interagem com bancos de dados, como sistemas web, apps e softwares administrativos.
+    </p>
+  `,
+  video: "./imagens/Aniversarios.mp4",
+  link: "./pages/aniversariantes.html"
+},{name: "#7DaysOfCode - Lógicas em JS",
+  languages: [
+    "css.PNG","js.PNG","html.PNG","bootstrap.PNG"
+  ],
+  description: `
+    <p>
+      Projeto desenvolvido como parte do desafio <b>Alura</b> <i>#7DaysOfCode</i>. 
+      Consiste em uma <b>Web</b> app que foram inseridos 4 chatBots: Cadastro, Sorteio, Calculadora e Produtos.<br><br>
+
+      Foi utilizado conjunto de operações fundamentais <b>Lógicas de programação:</b><br><br>
+      - Variáveis<br>
+      - Tipos de dados (string, número, booleano, etc.)<br>
+      - Operadores (matemáticos e lógicos)<br>
+      - Estruturas condicionais (if, else, switch)<br>
+      - Laços de repetição (for, while)<br>
+      - Funções<br>
+      - Estruturas de dados (arrays, objetos)<br>
+      - Manipulação de eventos<br>
+      - Entrada e saída de dados<br>
+    </p>
+  `,
+  video: "./imagens/logicas-em-JS.mp4",
+  link: "./pages/logicas-em-js/index.html"
+}
+      ]
     }
   },
 

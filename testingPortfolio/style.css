@@ -68,7 +68,7 @@ body.dark-mode p {
         }
 
         .header-container {
-            max-width: 1280px;
+            width: 100%;
             margin: 0 auto;
             padding: 0 1.5rem;
             display: flex;
@@ -110,7 +110,7 @@ body.dark-mode p {
             gap: 0.25rem;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1000px) {
             .nav-desktop {
                 display: flex;
             }
@@ -151,7 +151,7 @@ body.dark-mode p {
             font-size: 1.5rem;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1000px) {
             .mobile-menu-button {
                 display: none;
             }
@@ -176,7 +176,7 @@ body.dark-mode p {
         }
 
         main {
-            max-width: 1280px;
+            width: 100%;
             margin: 0 auto;
             padding: 3rem 1.5rem;
         }
@@ -291,7 +291,7 @@ body.dark-mode p {
             margin-top: 1.5rem;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1000px) {
             .skills-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -478,4 +478,63 @@ body.dark-mode .subTexto {
  cursor: pointer;
  font-weight: bold;
  margin: 8px 0;
+}
+
+.linkImg{
+    transition: transform 0.4s ease;
+    width: 175px;
+    height: 100px;
+    display: block;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  border: solid;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  animation: bgCycle 6s infinite alternate;
+}
+
+/* Keyframes for background color cycling */
+@keyframes bgCycle {
+  0%   { background-color: white; }
+  33%  { background-color: #00e8ff; }   /* light cyan/blue */
+  66%  { background-color: #082688; }   /* dark navy blue */
+  100% { background-color: white; }
+}
+
+.video-wrapper video {
+  display: block;
+  border-radius: 12px;
+  width: 175px;   /* tamanho inicial */
+  height: 100px;
+  transition: all 0.4s ease;
+}
+
+.video-wrapper:hover video {
+  width: 100%;    /* expande para ocupar toda a largura do container */
+  height: auto;   /* ajusta altura proporcionalmente */
+  max-height: 300px; /* limite máximo de altura */
+  transform: scale(1.05); /* leve zoom para dar destaque */
+  z-index: 1;     /* mantém acima do overlay, mas dentro do fluxo */
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* overlay mais suave */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+}
+
+.video-wrapper:hover .video-overlay {
+  opacity: 1; /* mostra overlay ao passar o mouse */
 }
