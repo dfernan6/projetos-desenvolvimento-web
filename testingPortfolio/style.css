@@ -500,9 +500,9 @@ body.dark-mode .subTexto {
 /* Keyframes for background color cycling */
 @keyframes bgCycle {
   0%   { background-color: white; }
-  33%  { background-color: #00e8ff; }   /* light cyan/blue */
+  33%  { background-color: #6a00ff; }   /* light cyan/blue */
   66%  { background-color: #082688; }   /* dark navy blue */
-  100% { background-color: white; }
+  100% { background-color: rgb(37, 37, 38); }
 }
 
 .video-wrapper video {
@@ -537,4 +537,98 @@ body.dark-mode .subTexto {
 
 .video-wrapper:hover .video-overlay {
   opacity: 1; /* mostra overlay ao passar o mouse */
+}
+
+.contentInterno p {
+    font-size: 14px;
+}
+.contentInterno {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentInternoM {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow {
+    font-size: 8px;
+}
+
+.contensImage{
+    display: contents;
+      overflow: hidden;
+  border-radius: 12px; /* opcional, para suavizar bordas */
+}
+
+.contensImage:hover .linkImg {
+  transform: scale(1.05); /* aumenta 5% */
+}
+
+.description {
+  font-family: verdana;
+  color: rgb(113 113 113);
+  font-size: 12px;
+  margin-top: -25px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+img.languages {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 5px;
+  user-select: none;
+  border: solid #cfcfcf;
+}
+
+img.languages:hover {
+  border: solid #797979;
+  filter: brightness(70%);
+}
+
+.image-wrapper:hover .texto-sobre {
+  opacity: 1;
+}
+
+.texto-sobre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: verdana;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.duplas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkImg{
+    transition: transform 0.4s ease;
+    width: 175px;
+    height: 100px;
+    display: block;
 }

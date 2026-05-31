@@ -106,9 +106,40 @@ function renderProjetosPage() {
   `;
 }
 
+function renderHardSkills() {
+  const page = content[state.language]?.hardSkills;
+  if (!page) {
+    return `<p>Hard skills not defined for this language.</p>`;
+  }
+  return `
+    <section id="iCorpo" class="container">
+      <div id="iInterface" class="container">
+        <div class="topo">
+          <h1 class="exp">${page.title}</h1>
+          <p class="topo">${page.description}</p>
+        </div>
+        <div class="elementsContainer">
+          ${page.categories.map(cat => `
+            <div class="estavel"><h4>${cat.title}</h4></div>
+            <div class="description">
+              ${cat.skills.map(skill => `
+                <div class="image-wrapper">
+                  <img class="languages" draggable="false" src="./imagens/${skill.image}" alt="${skill.name}">
+                  <div class="texto-sobre">${skill.name}</div>
+                  ${skill.level ? `<div class="duplas"><p>Nível:</p><h5>${skill.level}</h5></div>` : ""}
+                </div>
+              `).join("")}
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
 function renderPage() {
   if (state.currentPage === 'home') return renderHomePage();
-  if (state.currentPage === 'hardskills') return renderHardSkillsPage();
+  if (state.currentPage === 'hardskills') return renderHardSkills();
   if (state.currentPage === 'softskills') return renderSoftSkillsPage();
   if (state.currentPage === 'projetos') return renderProjetosPage();
   if (state.currentPage === 'experiencia') return renderExperienciaPage();

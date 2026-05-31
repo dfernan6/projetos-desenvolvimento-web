@@ -165,23 +165,77 @@ const content = {
 </div>
       `
     },
-  hardskills: {
-                title: 'Hard Skills',
-                categories: [
-                    {
-                        name: 'Frontend',
-                        skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue.js', 'Tailwind']
-                    },
-                    {
-                        name: 'Backend',
-                        skills: ['Node.js', 'Python', 'PHP', 'SQL', 'MongoDB', 'REST APIs']
-                    },
-                    {
-                        name: 'DevOps',
-                        skills: ['Git', 'GitHub', 'Docker', 'CI/CD', 'Linux']
-                    }
-                ]
+  hardSkills: 
+  {
+  title: "Habilidades",
+  description: "Os conhecimentos técnicos são fundamentais para meu desempenho profissional, permitindo soluções eficientes, tomada de decisões assertivas e constante evolução diante dos desafios tecnológicos ",
+  categories: [
+    {
+      title: "Desenvolvimento Web | Mobile",
+      skills: [
+        { name: "HTML5", image: "html.PNG" },
+        { name: "CSS3", image: "css.PNG" },
+        { name: "JavaScript", image: "js.PNG" },
+        { name: "TypeScript", image: "ts.PNG" },
+        { name: "PHP", image: "php.PNG" },
+        { name: "ReactJS", image: "react.PNG" },
+        { name: "MongoDB", image: "mongodb.PNG" },
+        { name: "Rust", image: "rust.PNG" },
+        { name: "NodeJS", image: "nodejs.PNG" },
+        { name: "NextJS", image: "nextjs.PNG" },
+        { name: "Tailwind", image: "tailwind.PNG" },
+        { name: "Bash-Shell", image: "bash.PNG" },
+        { name: "C", image: "c.PNG" },
+        { name: "Firebase", image: "firebase.PNG" },
+        { name: "Vercel", image: "vercel.png" },
+        { name: "Bootstrap", image: "bootstrap.PNG" },
+        { name: "ESLint", image: "eslint.PNG" },
+        { name: "Jira", image: "jira.PNG" },
+        { name: "Miro", image: "miro.PNG" },
+        { name: "Android Studio", image: "androidStudio.PNG" },
+        { name: "React Native", image: "reactNative.PNG" },
+        { name: "Expo", image: "expo.PNG" },
+        { name: "Docker", image: "docker.png" },
+        { name: "Kotlin", image: "kotlin.png" },
+        { name: "Laravel", image: "laravel.png" },
+        { name: "Figma", image: "figma.png" },
+        { name: "Trello", image: "trello.png" }
+      ]
     },
+    {
+      title: "Análise de TI",
+      skills: [
+        { name: "MS-Office", image: "office.PNG" },
+        { name: "Acesso Remoto", image: "remote.PNG" },
+        { name: "Postman", image: "postman.PNG" },
+        { name: "SAP", image: "sap.PNG" },
+        { name: "ERP", image: "erp.PNG" },
+        { name: "CRM", image: "CRM.PNG" },
+        { name: "Zimbra", image: "zimbra.PNG" },
+        { name: "ServiceNow", image: "serviceNow.PNG" },
+        { name: "Active Directory", image: "activeDirectory.PNG" },
+        { name: "Movidesk", image: "movidesk.PNG" }
+      ]
+    },
+    {
+      title: "Análise de Sistemas e CyberSecurity",
+      skills: [
+        { name: "Packet Tracer", image: "packet tracer.PNG" },
+        { name: "VPN", image: "vpn.PNG" },
+        { name: "Wireshark", image: "wireshark.PNG" },
+        { name: "UNIX", image: "unix.PNG" }
+      ]
+    },
+    {
+      title: "Idiomas",
+      skills: [
+        { name: "Inglês", image: "ingles.PNG", level: "Avançado" },
+        { name: "Alemão", image: "alemao.PNG", level: "Intermediário" },
+        { name: "Português", image: "português.PNG", level: "Nativo" }
+      ]
+    }
+  ]
+},
       projetos: {
       title: "Projetos",
       description: "Projetos desenvolvidos em aulas, treinamentos e para empresas estão reunidos nesta seção",
@@ -539,23 +593,76 @@ const content = {
 </div>
       `
     },
-  hardskills: {
-                title: 'Hard Skills',
-                categories: [
-                    {
-                        name: 'Frontend',
-                        skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue.js', 'Tailwind']
-                    },
-                    {
-                        name: 'Backend',
-                        skills: ['Node.js', 'Python', 'PHP', 'SQL', 'MongoDB', 'REST APIs']
-                    },
-                    {
-                        name: 'DevOps',
-                        skills: ['Git', 'GitHub', 'Docker', 'CI/CD', 'Linux']
-                    }
-                ]
-  },
+  hardSkills: {
+                title: "Skills",
+  description: "Technical knowledge is essential for my professional performance, enabling efficient solutions, assertive decision-making, and constant evolution in the face of technological challenges",
+  categories: [
+    {
+      title: "Web | Mobile Development",
+      skills: [
+        { name: "HTML5", image: "html.PNG" },
+        { name: "CSS3", image: "css.PNG" },
+        { name: "JavaScript", image: "js.PNG" },
+        { name: "TypeScript", image: "ts.PNG" },
+        { name: "PHP", image: "php.PNG" },
+        { name: "ReactJS", image: "react.PNG" },
+        { name: "MongoDB", image: "mongodb.PNG" },
+        { name: "Rust", image: "rust.PNG" },
+        { name: "NodeJS", image: "nodejs.PNG" },
+        { name: "NextJS", image: "nextjs.PNG" },
+        { name: "Tailwind", image: "tailwind.PNG" },
+        { name: "Bash-Shell", image: "bash.PNG" },
+        { name: "C", image: "c.PNG" },
+        { name: "Firebase", image: "firebase.PNG" },
+        { name: "Vercel", image: "vercel.png" },
+        { name: "Bootstrap", image: "bootstrap.PNG" },
+        { name: "ESLint", image: "eslint.PNG" },
+        { name: "Jira", image: "jira.PNG" },
+        { name: "Miro", image: "miro.PNG" },
+        { name: "Android Studio", image: "androidStudio.PNG" },
+        { name: "React Native", image: "reactNative.PNG" },
+        { name: "Expo", image: "expo.PNG" },
+        { name: "Docker", image: "docker.png" },
+        { name: "Kotlin", image: "kotlin.png" },
+        { name: "Laravel", image: "laravel.png" },
+        { name: "Figma", image: "figma.png" },
+        { name: "Trello", image: "trello.png" }
+      ]
+    },
+    {
+      title: "IT Analysis",
+      skills: [
+        { name: "MS-Office", image: "office.PNG" },
+        { name: "Acesso Remoto", image: "remote.PNG" },
+        { name: "Postman", image: "postman.PNG" },
+        { name: "SAP", image: "sap.PNG" },
+        { name: "ERP", image: "erp.PNG" },
+        { name: "CRM", image: "CRM.PNG" },
+        { name: "Zimbra", image: "zimbra.PNG" },
+        { name: "ServiceNow", image: "serviceNow.PNG" },
+        { name: "Active Directory", image: "activeDirectory.PNG" },
+        { name: "Movidesk", image: "movidesk.PNG" }
+      ]
+    },
+    {
+      title: "System Analysis and CyberSecurity",
+      skills: [
+        { name: "Packet Tracer", image: "packet tracer.PNG" },
+        { name: "VPN", image: "vpn.PNG" },
+        { name: "Wireshark", image: "wireshark.PNG" },
+        { name: "UNIX", image: "unix.PNG" }
+      ]
+    },
+    {
+  title: "Languages",
+  skills: [
+    { name: "English", image: "ingles.PNG", level: "Advanced" },
+    { name: "German", image: "alemao.PNG", level: "Intermediate" },
+    { name: "Portuguese", image: "português.PNG", level: "Native" }
+  ]
+}
+  ]
+},
   projetos: {
   title: "Projects",
   description: "Projects developed in classes, training sessions, and for companies are gathered in this section",
@@ -904,23 +1011,77 @@ const content = {
 </div>
       `
     },
-  hardskills: {
-                title: 'Hard Skills',
-                categories: [
-                    {
-                        name: 'Frontend',
-                        skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue.js', 'Tailwind']
-                    },
-                    {
-                        name: 'Backend',
-                        skills: ['Node.js', 'Python', 'PHP', 'SQL', 'MongoDB', 'REST APIs']
-                    },
-                    {
-                        name: 'DevOps',
-                        skills: ['Git', 'GitHub', 'Docker', 'CI/CD', 'Linux']
-                    }
-                ]
-    },projetos: {
+  hardSkills: {
+                title: "Fähigkeiten",
+  description: "Technisches Wissen ist entscheidend für meine berufliche Leistung, ermöglicht effiziente Lösungen, fundierte Entscheidungen und ständige Weiterentwicklung angesichts technologischer Herausforderungen",
+  categories: [
+    {
+      title: "Web | Mobile Entwicklung",
+      skills: [
+        { name: "HTML5", image: "html.PNG" },
+        { name: "CSS3", image: "css.PNG" },
+        { name: "JavaScript", image: "js.PNG" },
+        { name: "TypeScript", image: "ts.PNG" },
+        { name: "PHP", image: "php.PNG" },
+        { name: "ReactJS", image: "react.PNG" },
+        { name: "MongoDB", image: "mongodb.PNG" },
+        { name: "Rust", image: "rust.PNG" },
+        { name: "NodeJS", image: "nodejs.PNG" },
+        { name: "NextJS", image: "nextjs.PNG" },
+        { name: "Tailwind", image: "tailwind.PNG" },
+        { name: "Bash-Shell", image: "bash.PNG" },
+        { name: "C", image: "c.PNG" },
+        { name: "Firebase", image: "firebase.PNG" },
+        { name: "Vercel", image: "vercel.png" },
+        { name: "Bootstrap", image: "bootstrap.PNG" },
+        { name: "ESLint", image: "eslint.PNG" },
+        { name: "Jira", image: "jira.PNG" },
+        { name: "Miro", image: "miro.PNG" },
+        { name: "Android Studio", image: "androidStudio.PNG" },
+        { name: "React Native", image: "reactNative.PNG" },
+        { name: "Expo", image: "expo.PNG" },
+        { name: "Docker", image: "docker.png" },
+        { name: "Kotlin", image: "kotlin.png" },
+        { name: "Laravel", image: "laravel.png" },
+        { name: "Figma", image: "figma.png" },
+        { name: "Trello", image: "trello.png" }
+      ]
+    },
+    {
+      title: "IT-Analyse",
+      skills: [
+        { name: "MS-Office", image: "office.PNG" },
+        { name: "Acesso Remoto", image: "remote.PNG" },
+        { name: "Postman", image: "postman.PNG" },
+        { name: "SAP", image: "sap.PNG" },
+        { name: "ERP", image: "erp.PNG" },
+        { name: "CRM", image: "CRM.PNG" },
+        { name: "Zimbra", image: "zimbra.PNG" },
+        { name: "ServiceNow", image: "serviceNow.PNG" },
+        { name: "Active Directory", image: "activeDirectory.PNG" },
+        { name: "Movidesk", image: "movidesk.PNG" }
+      ]
+    },
+    {
+      title: "Systemanalyse und CyberSecurity",
+      skills: [
+        { name: "Packet Tracer", image: "packet tracer.PNG" },
+        { name: "VPN", image: "vpn.PNG" },
+        { name: "Wireshark", image: "wireshark.PNG" },
+        { name: "UNIX", image: "unix.PNG" }
+      ]
+    },
+    {
+  title: "Sprachen",
+  skills: [
+    { name: "Englisch", image: "ingles.PNG", level: "Fortgeschritten" },
+    { name: "Deutsch", image: "alemao.PNG", level: "Mittelstufe" },
+    { name: "Portugiesisch", image: "português.PNG", level: "Muttersprache" }
+  ]
+}
+
+  ]
+},projetos: {
   title: "Projekte",
   description: "In dieser Sektion sind Projekte aus Unterricht, Trainings und für Unternehmen zusammengefasst",
   items: [
