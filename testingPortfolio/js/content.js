@@ -426,7 +426,52 @@ const content = {
   link: "./pages/logicas-em-js/index.html"
 }
       ]
+    },
+formacao: {
+  title: "Formações",
+  description: "Possuo formação acadêmica sólida com foco em Desenvolvimento Web, onde desenvolvi competências técnicas e teóricas essenciais para minha atuação profissional",
+  courses: [
+    {
+      name: "Sistemas de informação",
+      institution: "Descomplica",
+      type: "Bacharelado",
+      status: "Em andamento 🔄",
+      period: "7/2023 - 8/2027"
+    },
+    {
+      name: "Desenvolvimento Web",
+      institution: "Trybe",
+      type: "Técnico",
+      status: "Completo ✅",
+      period: "7/2021 - 7/2022"
+    },
+    {
+      name: "Inglês para negócios",
+      institution: "EF Education First",
+      type: "Técnico",
+      status: "Completo ✅",
+      period: "11/2018 - 11/2019"
     }
+  ],
+  certifications: [
+    {
+      name: "CEFR ❗",
+      description: "Nível de inglês 🎚️ B2 Acima do intermediário",
+      details: "O CEFR (Common European Framework of Reference for Languages) é um padrão internacional..."
+    },
+    {
+      name: "EFSET ❗",
+      description: "Inglês para negócios 🎚️ C2 Acima do avançado",
+      details: "O EF SET (EF Standard English Test) é um teste gratuito e online..."
+    }
+  ],
+  extras: [
+    { name: "CISCO", description: "Fundamentos de cybersecurity ⏳ 33 hrs" },
+    { name: "Curso em vídeo", description: "PHP basics, PHP POO, JavaScript, HTML5 ⏳ 160 hrs" },
+    { name: "Trybe", description: "Fundamentos do desenvolvimento Web, Front-End, Back-End, Ciência da computação ⏳ 1300 hrs" },
+    { name: "MongoDB", description: "MongoDB Node.js Developer Path ⏳ 33 hrs" }
+  ]
+}
   },
 
   en: {
@@ -843,7 +888,52 @@ const content = {
     link: "./pages/logicas-em-js/index.html"
   } 
 ]
-  }
+  },
+formacao: {
+  title: "Education",
+  description: "I have a solid academic background focused on Web Development, where I developed essential technical and theoretical skills for my professional career.",
+  courses: [
+    {
+      name: "Information Systems",
+      institution: "Descomplica",
+      type: "Bachelor’s Degree",
+      status: "In progress 🔄",
+      period: "07/2023 - 08/2027"
+    },
+    {
+      name: "Web Development",
+      institution: "Trybe",
+      type: "Technical",
+      status: "Completed ✅",
+      period: "07/2021 - 07/2022"
+    },
+    {
+      name: "Business English",
+      institution: "EF Education First",
+      type: "Technical",
+      status: "Completed ✅",
+      period: "11/2018 - 11/2019"
+    }
+  ],
+  certifications: [
+    {
+      name: "CEFR ❗",
+      description: "English level 🎚️ B2 Upper Intermediate",
+      details: "The CEFR (Common European Framework of Reference for Languages) is an international standard that classifies language proficiency into six levels, from A1 (beginner) to C2 (fluent)."
+    },
+    {
+      name: "EFSET ❗",
+      description: "Business English 🎚️ C2 Advanced",
+      details: "The EF SET (EF Standard English Test) is a free online English proficiency test developed by EF Education First, aligned with CEFR levels."
+    }
+  ],
+  extras: [
+    { name: "CISCO", description: "Cybersecurity Fundamentals ⏳ 33 hrs" },
+    { name: "Curso em Vídeo", description: "PHP basics, PHP OOP, JavaScript, HTML5 ⏳ 160 hrs" },
+    { name: "Trybe", description: "Web Development Fundamentals, Front-End, Back-End, Computer Science ⏳ 1300 hrs" },
+    { name: "MongoDB", description: "MongoDB Node.js Developer Path ⏳ 33 hrs" }
+  ]
+}
 },
       
 
@@ -1273,7 +1363,52 @@ const content = {
   link: "./pages/logicas-em-js/index.html"
 }
   ]
+    },
+formacao: {
+  title: "Ausbildung",
+  description: "Ich verfüge über eine solide akademische Ausbildung mit Schwerpunkt Webentwicklung, in der ich wesentliche technische und theoretische Kompetenzen für meine berufliche Laufbahn entwickelt habe.",
+  courses: [
+    {
+      name: "Informatiksysteme",
+      institution: "Descomplica",
+      type: "Bachelor",
+      status: "Laufend 🔄",
+      period: "07/2023 - 08/2027"
+    },
+    {
+      name: "Webentwicklung",
+      institution: "Trybe",
+      type: "Technisch",
+      status: "Abgeschlossen ✅",
+      period: "07/2021 - 07/2022"
+    },
+    {
+      name: "Business Englisch",
+      institution: "EF Education First",
+      type: "Technisch",
+      status: "Abgeschlossen ✅",
+      period: "11/2018 - 11/2019"
     }
+  ],
+  certifications: [
+    {
+      name: "CEFR ❗",
+      description: "Englisch-Niveau 🎚️ B2 Oberes Mittelstufe",
+      details: "Der CEFR (Gemeinsamer Europäischer Referenzrahmen für Sprachen) ist ein internationaler Standard, der die Sprachkompetenz in sechs Stufen von A1 (Anfänger) bis C2 (fließend) einteilt."
+    },
+    {
+      name: "EFSET ❗",
+      description: "Business Englisch 🎚️ C2 Fortgeschritten",
+      details: "Der EF SET (EF Standard English Test) ist ein kostenloser Online-Test zur Englischkenntnis, entwickelt von EF Education First und ausgerichtet an den CEFR-Stufen."
+    }
+  ],
+  extras: [
+    { name: "CISCO", description: "Grundlagen der Cybersicherheit ⏳ 33 Std." },
+    { name: "Curso em Vídeo", description: "PHP Grundlagen, PHP OOP, JavaScript, HTML5 ⏳ 160 Std." },
+    { name: "Trybe", description: "Grundlagen der Webentwicklung, Front-End, Back-End, Informatik ⏳ 1300 Std." },
+    { name: "MongoDB", description: "MongoDB Node.js Entwicklerpfad ⏳ 33 Std." }
+  ]
+}
   }
 }
 // Social Links (iguais em todos os idiomas)

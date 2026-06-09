@@ -126,7 +126,7 @@ function renderHardSkills() {
                 <div class="image-wrapper">
                   <img class="languages" draggable="false" src="./imagens/${skill.image}" alt="${skill.name}">
                   <div class="texto-sobre">${skill.name}</div>
-                  ${skill.level ? `<div class="duplas"><p>Nível:</p><h5>${skill.level}</h5></div>` : ""}
+                  ${skill.level ? `<div class="duplas"><h5>${skill.level}</h5></div>` : ""}
                 </div>
               `).join("")}
             </div>
@@ -137,13 +137,51 @@ function renderHardSkills() {
   `;
 }
 
+function renderFormacaoPage() {
+  const page = content[state.language].formacao;
+  return `
+    <div class="topo">
+      <h1 class="exp">${page.title}</h1>
+      <p class="topo">${page.description}</p>
+    </div>
+    <div class="elementsContainer">
+      ${page.courses.map(course => `
+        <div class="skills">
+          <h3><span class="arrow">◀</span> ${course.name}</h3>
+        </div>
+        <div class="subTexto">
+          <span><b>${course.institution}</b> | <i>${course.type}</i></span>
+        </div>
+        <div class="textoOculto">
+          <p>${course.status} ${course.period}</p>
+        </div>
+      `).join("")}
+
+      <br><h1>Certificações de grande prestígio profissional</h1>
+      ${page.certifications.map(cert => `
+        <div class="skills">
+          <h3><span class="arrow">◀</span> ${cert.name}</h3>
+        </div>
+        <div class="subTexto"><span>${cert.description}</span></div>
+        <div class="textoOculto"><p>${cert.details}</p></div>
+      `).join("")}
+
+      ${page.extras.map(extra => `
+        <div class="estavel"><h4>${extra.name}</h4></div>
+        <div class="subTexto"><span>${extra.description}</span></div>
+      `).join("")}
+    </div>
+  `;
+}
+
 function renderPage() {
   if (state.currentPage === 'home') return renderHomePage();
   if (state.currentPage === 'hardskills') return renderHardSkills();
   if (state.currentPage === 'softskills') return renderSoftSkillsPage();
   if (state.currentPage === 'projetos') return renderProjetosPage();
   if (state.currentPage === 'experiencia') return renderExperienciaPage();
-  
+  if (state.currentPage === 'formacao') return renderFormacaoPage();
+
   const page = content[state.language][state.currentPage];
   return `
     <div class="space-y-6">
@@ -169,6 +207,22 @@ function attachExperienciaEvents() {
 }
 
 function attachProjetosEvents() {
+  document.querySelectorAll('.skills').forEach(skill => {
+    skill.addEventListener('click', () => {
+      // find the hidden block right after the skill
+      const hidden = skill.nextElementSibling.nextElementSibling || skill.nextElementSibling;
+      if (hidden && hidden.classList.contains('textoOculto')) {
+        hidden.classList.toggle('show');
+        const arrow = skill.querySelector('.arrow');
+        if (arrow) {
+          arrow.textContent = hidden.classList.contains('show') ? '▼' : '◀';
+        }
+      }
+    });
+  });
+}
+
+function attachFormacaoEvents() {
   document.querySelectorAll('.skills').forEach(skill => {
     skill.addEventListener('click', () => {
       // find the hidden block right after the skill
@@ -235,3 +289,5 @@ function changeLanguage(lang) {
 
   // Attach events after DOM is updated
   attachExperienciaEvents();
+  attachProjetosEvents();
+  attachFormacaoEvents();
