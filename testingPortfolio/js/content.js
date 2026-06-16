@@ -453,6 +453,7 @@ formacao: {
       period: "11/2018 - 11/2019"
     }
   ],
+  certificationsTitle: "Certificações de grande prestígio profissional",
   certifications: [
     {
       name: "CEFR ❗",
@@ -915,6 +916,7 @@ formacao: {
       period: "11/2018 - 11/2019"
     }
   ],
+  certificationsTitle: "Certifications of high professional prestige", 
   certifications: [
     {
       name: "CEFR ❗",
@@ -1390,6 +1392,7 @@ formacao: {
       period: "11/2018 - 11/2019"
     }
   ],
+  certificationsTitle: "Zertifizierungen von hohem beruflichen Prestige",
   certifications: [
     {
       name: "CEFR ❗",

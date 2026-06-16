@@ -147,6 +147,7 @@ function renderFormacaoPage() {
     <div class="elementsContainer">
       ${page.courses.map(course => `
         <div class="skills">
+          <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
           <h3><span class="arrow">◀</span> ${course.name}</h3>
         </div>
         <div class="subTexto">
@@ -157,7 +158,7 @@ function renderFormacaoPage() {
         </div>
       `).join("")}
 
-      <br><h1>Certificações de grande prestígio profissional</h1>
+      <br><h1>${page.certificationsTitle}</h1>
       ${page.certifications.map(cert => `
         <div class="skills">
           <h3><span class="arrow">◀</span> ${cert.name}</h3>
