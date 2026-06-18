@@ -160,17 +160,61 @@ function renderFormacaoPage() {
 
       <br><h1>${page.certificationsTitle}</h1>
       ${page.certifications.map(cert => `
-        <div class="skills">
+        <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
           <h3><span class="arrow">◀</span> ${cert.name}</h3>
         </div>
         <div class="subTexto"><span>${cert.description}</span></div>
-        <div class="textoOculto"><p>${cert.details}</p></div>
-      `).join("")}
+        <div class="textoOculto">
+          <p>${cert.details}</p>
+        </div>
+`).join("")}
+
 
       ${page.extras.map(extra => `
         <div class="estavel"><h4>${extra.name}</h4></div>
         <div class="subTexto"><span>${extra.description}</span></div>
       `).join("")}
+    </div>
+  `;
+}
+
+function renderCurriculoPage() {
+  const t = translationsCurriculo;
+  const lang = state.language;
+
+  return `
+    <div class="topo">
+      <h1 class="exp">${t.title[lang]}</h1>
+      <p class="topo">${t.intro[lang]}</p>
+    </div>
+    <div class="elementsContainer">
+
+      <div class="skills" onclick="const hidden=this.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
+        <h3><span class="arrow">◀</span> ${t.options.download[lang]}</h3>
+      </div>
+      <div class="textoOculto">
+        <a href="../imagens/Danilo Andrade Fernandes-CVEN.pdf" download>
+          <p>${t.options.downloadText[lang]}</p>
+        </a>
+      </div>
+
+      <div class="skills" onclick="const hidden=this.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
+        <h3><span class="arrow">◀</span> ${t.options.open[lang]}</h3>
+      </div>
+      <div class="textoOculto">
+        <a href="../imagens/Danilo Andrade Fernandes-CVEN.pdf" target="_blank">
+          <p>${t.options.openText[lang]}</p>
+        </a>
+      </div>
+
+      <div class="skills" onclick="const hidden=this.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
+        <h3><span class="arrow">◀</span> ${t.options.view[lang]}</h3>
+      </div>
+      <div class="textoOculto">
+        <iframe src="../imagens/Danilo Andrade Fernandes-CVEN.pdf" width="100%" height="600px"></iframe>
+        <p>${t.options.viewText[lang]}</p>
+      </div>
+
     </div>
   `;
 }
@@ -182,6 +226,7 @@ function renderPage() {
   if (state.currentPage === 'projetos') return renderProjetosPage();
   if (state.currentPage === 'experiencia') return renderExperienciaPage();
   if (state.currentPage === 'formacao') return renderFormacaoPage();
+  if (state.currentPage === 'curriculo') return renderCurriculoPage();
 
   const page = content[state.language][state.currentPage];
   return `
@@ -239,6 +284,21 @@ function attachFormacaoEvents() {
   });
 }
 
+function attachCurriculoEvents() {
+  document.querySelectorAll('#app .skills').forEach(skill => {
+    skill.addEventListener('click', () => {
+      const hidden = skill.nextElementSibling;
+      if (hidden && hidden.classList.contains('textoOculto')) {
+        hidden.classList.toggle('show');
+        const arrow = skill.querySelector('.arrow');
+        if (arrow) {
+          arrow.textContent = hidden.classList.contains('show') ? '▼' : '◀';
+        }
+      }
+    });
+  });
+}
+
 function render() {
   document.getElementById('app').innerHTML = `
     <header>
@@ -269,7 +329,7 @@ function render() {
           <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
                   onclick="navigateTo('${item.id}')">
             <span>${item.icon}</span>
-            <span>${item.label}</span>
+            <span>${translations[item.id][state.language]}</span>
           </button>
         `).join('')}
       </nav>
@@ -292,3 +352,4 @@ function changeLanguage(lang) {
   attachExperienciaEvents();
   attachProjetosEvents();
   attachFormacaoEvents();
+  attachCurriculoEvents();

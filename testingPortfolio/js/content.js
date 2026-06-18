@@ -19,6 +19,46 @@ const translations = {
   curriculo: { pt: "Currículo", en: "Resume", de: "Lebenslauf" }
 };
 
+const translationsCurriculo = {
+  title: { pt: "Currículo", en: "Resume", de: "Lebenslauf" },
+  intro: {
+    pt: "Aqui você pode acessar meu currículo em PDF de três formas:",
+    en: "Here you can access my resume in PDF in three ways:",
+    de: "Hier können Sie meinen Lebenslauf im PDF-Format auf drei Arten abrufen:"
+  },
+  options: {
+    download: {
+      pt: "Baixar PDF",
+      en: "Download PDF",
+      de: "PDF herunterladen"
+    },
+    open: {
+      pt: "Abrir PDF",
+      en: "Open PDF",
+      de: "PDF öffnen"
+    },
+    view: {
+      pt: "Visualizar aqui",
+      en: "View here",
+      de: "Hier ansehen"
+    },
+    downloadText: {
+      pt: "Clique aqui para fazer o Download.",
+      en: "Click here to Download.",
+      de: "Hier klicken zum Herunterladen."
+    },
+    openText: {
+      pt: "Clique aqui para Abrir em outra janela.",
+      en: "Click here to Open in another window.",
+      de: "Hier klicken, um in einem neuen Fenster zu öffnen."
+    },
+    viewText: {
+      pt: "Visualização embutida do PDF.",
+      en: "Embedded PDF view.",
+      de: "Eingebettete PDF-Ansicht."
+    }
+  }
+};
 // Content Data em três idiomas
 const content = {
   pt: {
@@ -209,7 +249,8 @@ const content = {
         { name: "Kotlin", image: "kotlin.png" },
         { name: "Laravel", image: "laravel.png" },
         { name: "Figma", image: "figma.png" },
-        { name: "Trello", image: "trello.png" }
+        { name: "Trello", image: "trello.png" },
+        { name: "Vue", image: "vue.png" }
       ]
     },
     {
@@ -468,12 +509,12 @@ formacao: {
     {
       name: "CEFR ❗",
       description: "Nível de inglês 🎚️ B2 Acima do intermediário",
-      details: "O CEFR (Common European Framework of Reference for Languages) é um padrão internacional..."
+      details: "O CEFR (Quadro Europeu Comum de Referência para Línguas) é um padrão internacional que classifica a proficiência linguística em seis níveis, de A1 (iniciante) a C2 (fluente)."
     },
     {
       name: "EFSET ❗",
       description: "Inglês para negócios 🎚️ C2 Acima do avançado",
-      details: "O EF SET (EF Standard English Test) é um teste gratuito e online..."
+      details: "O EF SET (EF Standard English Test) é um teste gratuito e online de proficiência em inglês desenvolvido pela EF Education First, alinhado aos níveis do CEFR."
     }
   ],
   extras: [
