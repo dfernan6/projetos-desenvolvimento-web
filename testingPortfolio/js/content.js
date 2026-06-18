@@ -1,13 +1,23 @@
 // Navigation Items
 const navItems = [
-  { id: 'home', label: 'Home', icon: '🏠' },
-  { id: 'experiencia', label: 'Experiência', icon: '💼' },
-  { id: 'hardskills', label: 'Hard Skills', icon: '💻' },
-  { id: 'softskills', label: 'Soft Skills', icon: '🌟' },
-  { id: 'projetos', label: 'Projetos', icon: '🎯' },
-  { id: 'formacao', label: 'Formação', icon: '🎓' },
-  { id: 'curriculo', label: 'Currículo', icon: '📄' }
+  { id: 'home', icon: '🏠' },
+  { id: 'experiencia', icon: '💼' },
+  { id: 'hardskills', icon: '💻' },
+  { id: 'softskills', icon: '🌟' },
+  { id: 'projetos', icon: '🎯' },
+  { id: 'formacao', icon: '🎓' },
+  { id: 'curriculo', icon: '📄' }
 ];
+
+const translations = {
+  home: { pt: "Home", en: "Home", de: "Startseite" },
+  experiencia: { pt: "Experiência", en: "Experience", de: "Erfahrung" },
+  hardskills: { pt: "Hard Skills", en: "Hard Skills", de: "Fachkenntnisse" },
+  softskills: { pt: "Soft Skills", en: "Soft Skills", de: "Soziale Kompetenzen" },
+  projetos: { pt: "Projetos", en: "Projects", de: "Projekte" },
+  formacao: { pt: "Formação", en: "Education", de: "Ausbildung" },
+  curriculo: { pt: "Currículo", en: "Resume", de: "Lebenslauf" }
+};
 
 // Content Data em três idiomas
 const content = {

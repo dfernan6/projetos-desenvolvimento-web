@@ -253,7 +253,7 @@ function render() {
             <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
                     onclick="navigateTo('${item.id}')">
               <span>${item.icon}</span>
-              <span>${item.label}</span>
+              <span>${translations[item.id][state.language]}</span>
             </button>
           `).join('')}
         </nav>
