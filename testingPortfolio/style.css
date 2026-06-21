@@ -284,6 +284,9 @@ body.dark-mode p {
             color: var(--gray-700);
         }
 
+        body.dark-mode .quote-text {
+            color: #374151;
+        }
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr;

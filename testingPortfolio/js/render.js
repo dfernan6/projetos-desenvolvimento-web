@@ -73,8 +73,45 @@ function renderSoftSkillsPage() {
 }
 
 function renderExperienciaPage() {
-  const page = content[state.language].experiencia;
-  return content[state.language].experiencia.html;
+  const t = translationsExperiencia;
+  const lang = state.language;
+
+  return `
+    <div class="topo">
+      <h1 class="exp">${t.title[lang]}</h1>
+    </div>
+    <div class="elementsContainer">
+
+      ${t.jobs.map(job => `
+        <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
+          <h3><span class="arrow">◀</span> ${job.company}</h3>
+        </div>
+        <div class="subTexto">
+          <span><b>${job.role[lang]}</b> 🗓️ <i>${job.period[lang]}</i></span>
+        </div>
+        <div class="textoOculto">
+          <p>${job.details[lang]}</p>
+        </div>
+      `).join("")}
+
+      <br><h1>${t.autonomas[lang]}</h1>
+
+      ${t.freelance.map(f => `
+        <div class="skills" onclick="const hidden=this.nextElementSibling${f.images ? '.nextElementSibling' : ''}; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
+          <h3><span class="arrow">◀</span> ${f.company}</h3>
+        </div>
+        ${f.images ? `
+          <div class="subTexto">
+            ${f.images.map(img => `<img class="simbolos" src="${img}">`).join("")}
+          </div>
+        ` : ""}
+        <div class="textoOculto">
+          <p>${f.details[lang]}</p>
+        </div>
+      `).join("")}
+
+    </div>
+  `;
 }
 
 function renderProjetosPage() {
@@ -85,7 +122,7 @@ function renderProjetosPage() {
       <p>${page.description}</p>
       ${page.items.map(item => `
         ${item.title ? `<div class="estavel"><h2>${item.title}</h2></div>` : ""}
-        <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
+        <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
           <h3><span class="arrow">◀</span> ${item.name}</h3>
         </div>
         <div class="subTexto">
@@ -146,30 +183,29 @@ function renderFormacaoPage() {
     </div>
     <div class="elementsContainer">
       ${page.courses.map(course => `
-        <div class="skills">
-          <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-          <h3><span class="arrow">◀</span> ${course.name}</h3>
-        </div>
-        <div class="subTexto">
-          <span><b>${course.institution}</b> | <i>${course.type}</i></span>
-        </div>
+        <div class="skills" onclick="const hidden=this.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
+            <h3><span class="arrow">◀</span> ${course.name}</h3>
+          </div>
+          <div class="textoOculto">
+            <p>${course.status} ${course.period}</p>
+          </div>
+          <div class="subTexto">
+            <span><b>${course.institution}</b> | <i>${course.type}</i></span>
+          </div>    
         <div class="textoOculto">
           <p>${course.status} ${course.period}</p>
         </div>
-      `).join("")}
-
-      <br><h1>${page.certificationsTitle}</h1>
+      `).join("")}  
+        <br><h1>${page.certificationsTitle}</h1>
       ${page.certifications.map(cert => `
-        <div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
+        <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
           <h3><span class="arrow">◀</span> ${cert.name}</h3>
         </div>
         <div class="subTexto"><span>${cert.description}</span></div>
         <div class="textoOculto">
           <p>${cert.details}</p>
         </div>
-`).join("")}
-
-
+      `).join("")}
       ${page.extras.map(extra => `
         <div class="estavel"><h4>${extra.name}</h4></div>
         <div class="subTexto"><span>${extra.description}</span></div>
