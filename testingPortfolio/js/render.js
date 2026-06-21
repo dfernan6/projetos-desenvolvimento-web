@@ -3,8 +3,8 @@ function renderHomePage() {
   return `
     <div class="space-y-8">
       <div class="text-center">
-        <div class="hero-avatar">
-          <div class="hero-avatar-inner">💻</div>
+        <div >
+          <img class="hero-avatar" src="../imagens/eu.png" alt="Avatar de Danilo" class="avatar-image">
         </div>
         <h1 class="hero-title">${page.title}</h1>
         <p class="hero-subtitle">${page.subtitle}</p>
@@ -339,9 +339,9 @@ function render() {
   document.getElementById('app').innerHTML = `
     <header>
       <div class="header-container">
-        <div class="logo">
-          <div class="logo-icon">D</div>
-          <span class="logo-text">dfernan6</span>
+        <div class="logo" >
+          <img class="logo-image" src="../imagens/indexPerfil.PNG" alt="Logo de Danilo">
+          <span class="logo-text">Danilo Fernandes</span>
         </div>
         
         <nav class="nav-desktop">
