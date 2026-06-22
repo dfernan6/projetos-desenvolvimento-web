@@ -147,10 +147,10 @@ const translationsExperiencia = {
     {
       company: "Mozilla Builder",
       images: [
-      "./imagens/mozilla.PNG",
-      "./imagens/bugzilla.PNG",
-      "./imagens/firefox.PNG",
-      "./imagens/thunderbird.PNG"
+      "../assets/images/mozilla.PNG",
+      "../assets/images/bugzilla.PNG",
+      "../assets/images/firefox.PNG",
+      "../assets/images/thunderbird.PNG"
     ],
       details: {
         pt: "Correção de BUGs em aplicações Mozilla via Bugzilla (Firefox, Thunderbird).",
@@ -161,13 +161,13 @@ const translationsExperiencia = {
     {
       company: "GNU Developer",
       images: [
-      "./imagens/js.PNG",
-      "./imagens/rust.PNG",
-      "./imagens/html.PNG",
-      "./imagens/css.PNG",
-      "./imagens/git.PNG",
-      "./imagens/bash.PNG",
-      "./imagens/c.PNG"
+      "../assets/images/js.PNG",
+      "../assets/images/rust.PNG",
+      "../assets/images/html.PNG",
+      "../assets/images/css.PNG",
+      "../assets/images/git.PNG",
+      "../assets/images/bash.PNG",
+      "../assets/images/c.PNG"
     ],
       details: {
         pt: "Contribuições para o projeto GNU e software livre, seguindo padrões de codificação e colaborando com a comunidade.",
@@ -213,137 +213,6 @@ const content = {
         { name: 'Compromisso', level: 92 },
         { name: 'Curiosidade', level: 97 }
       ]
-    },
-    experiencia: {
-      title: 'Experiências',
-      html: `
-<!-- Positivo S+ -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> Positivo S+</h3>
-      </div>
-      <div class="subTexto">
-        <span><b>Analista de suporte bilingue</b> 🗓️ <i>Abril 2025 - Julho 2025</i></span>
-      </div>
-      <div class="textoOculto">
-        <p>
-          🎯 Ponte de suporte back end para clientes bancários PJ.<br>
-          🎯 Tratativas via e-mail e CRMs no Dynamics.
-        </p>
-      </div>
-
-      <!-- Tech Mahindra -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> Tech Mahindra</h3>
-      </div>
-      <div class="subTexto">
-        <span><b>Analista de atendimento</b> 🗓️ <i>Agosto 2024 - Fevereiro 2025</i></span>
-      </div>
-      <div class="textoOculto">
-        <p>
-          🎯 Correções em ERP: produtos, embalagens, notas fiscais.<br>
-          🎯 Uso de Swagger e Postman para APIs (HTTP, XML, JSON).
-        </p>
-      </div>
-
-      <!-- NTT DATA -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> NTT DATA</h3>
-      </div>
-      <div class="subTexto">
-        <span><b>PTN1 Analista de suporte BPO Jr.</b> 🗓️ <i>Abril 2023 - Junho 2024</i></span>
-      </div>
-      <div class="textoOculto">
-        <p>
-          🎯 Tickets no Movidesk.<br>
-          🎯 Correções em ERP.<br>
-          🎯 ServiceNow para acessos e redefinições de senha.
-        </p>
-      </div>
-
-      <!-- TCS -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> TCS - Tata Consultancy Services</h3>
-      </div>
-      <div class="subTexto">
-        <span><b>Analista de TI Jr.</b> 🗓️ <i>Agosto 2021 - Agosto 2022</i></span>
-      </div>
-      <div class="textoOculto">
-        <p>
-          🎯 ServiceNow para chamados GPV-F/M/P.<br>
-          🎯 XML no Control-M.<br>
-          🎯 Monitoramento ferroviário com Control-M.
-        </p>
-      </div>
-
-      <!-- Capgemini -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> Capgemini</h3>
-      </div>
-      <div class="subTexto">
-        <span><b>Técnico de Service Desk bilingue</b> 🗓️ <i>Outubro 2018 - Abril 2021</i></span>
-      </div>
-      <div class="textoOculto">
-        <p>
-          🎯 Service Desk com ServiceNow.<br>
-          🎯 Active Directory e Software Center.<br>
-          🎯 Configuração de VPN.
-        </p>
-      </div>
-
-      <br><h1>Experiências autônomas</h1>
-
-      <!-- Web Developer -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> Web Developer</h3>
-      </div>
-      <div class="textoOculto">
-        <p>
-          📈 Melhoria de desempenho.<br>
-          🎯 Foco em usabilidade.<br>
-          🔧 Manutenção e evolução.<br>
-          📊 Documentação e versionamento.<br>
-          🤝 Trabalho em equipe.
-        </p>
-      </div>
-
-      <!-- Mozilla Builder -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> Mozilla Builder</h3>
-      </div>
-      <div class="subTexto">
-        <img class="simbolos" src="./imagens/mozilla.PNG">
-        <img class="simbolos" src="./imagens/bugzilla.PNG">
-        <img class="simbolos" src="./imagens/firefox.PNG">
-        <img class="simbolos" src="./imagens/thunderbird.PNG">
-      </div>
-      <div class="textoOculto">
-        <p>
-          Correção de BUGs em aplicações Mozilla via Bugzilla.
-        </p>
-      </div>
-
-      <!-- GNU Developer -->
-      <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
-        <h3><span class="arrow">◀</span> GNU Developer</h3>
-      </div>
-      <div class="subTexto">
-        <h5>Linguagens utilizadas:</h5>
-        <img class="simbolos" src="./imagens/js.PNG">
-        <img class="simbolos" src="./imagens/rust.PNG">
-        <img class="simbolos" src="./imagens/html.PNG">
-        <img class="simbolos" src="./imagens/css.PNG">
-        <img class="simbolos" src="./imagens/git.PNG">
-        <img class="simbolos" src="./imagens/bash.PNG">
-        <img class="simbolos" src="./imagens/c.PNG">
-      </div>
-      <div class="textoOculto">
-        <p>
-          Contribuições para o projeto GNU e software livre.
-        </p>
-      </div>
-
-    </div>
-      `
     },
   hardSkills: 
   {
@@ -690,136 +559,6 @@ formacao: {
     { name: 'Curiosity', level: 92 }
   ]
 },
-    experiencia: {
-      title: 'Experiences',
-      html: `
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Positivo S+</h3>
-</div>
-<div class="subTexto">
-  <span><b>Bilingual Support Analyst</b> 🗓️ <i>April 2025 - July 2025</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 We acted as a backend support bridge for corporate banking clients, handling issues related to application access, registrations, and instructive meetings requested by clients.<br>
-    🎯 Requests were processed through email chains and CRMs generated via Dynamics.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Tech Mahindra</h3>
-</div>
-<div class="subTexto">
-  <span><b>Customer Service Analyst</b> 🗓️ <i>August 2024 - February 2025</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Using the ERP system, corrections were made in products, packaging, invoice issuance, and billing.<br>
-    🎯 Analyses were conducted with Swagger and Postman to obtain API information in HTTP, XML, and JSON formats.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> NTT DATA</h3>
-</div>
-<div class="subTexto">
-  <span><b>PTN1 BPO Jr. Support Analyst</b> 🗓️ <i>April 2023 - June 2024</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Ticket creation in Movidesk for customer support related to errors, questions, or service requests.<br>
-    🎯 Corrections in products, packaging, invoice issuance, and billing via ERP.<br>
-    🎯 In ServiceNow, we received details about issues requiring resolution or access requests and password resets for applications such as WMS, Egates, Logan, and PPMS.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> TCS - Tata Consultancy Services</h3>
-</div>
-<div class="subTexto">
-  <span><b>Junior IT Analyst</b> 🗓️ <i>August 2021 - August 2022</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Used ServiceNow to manage tickets assigned to my team, related to problem resolution in GPV-F (railway), GPV-M (mining), and GPV-P (ports) systems.<br>
-    🎯 When necessary, inserted XML code into applications to fix automation processes in Control-M.<br>
-    🎯 In railway operations, used Control-M to monitor and identify failures in daily automated tasks.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Capgemini</h3>
-</div>
-<div class="subTexto">
-  <span><b>Bilingual Service Desk Technician</b> 🗓️ <i>October 2018 - April 2021</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Worked as a Service Desk Technician, responsible for identifying and solving user network issues. Provided direct support or created tickets in ServiceNow to forward cases to the appropriate IT team.<br>
-    🎯 Used Active Directory to handle access requests and managed application installations via Software Center, ensuring LGPD compliance.<br>
-    🎯 Configured VPNs when users faced access difficulties.
-  </p>
-</div>
-
-<br>
-<h1>Freelance Experiences</h1>
-
-<div class="skills" onclick="this.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Web Developer</h3>
-</div>
-<div class="textoOculto">
-  <p>
-    Web Developer with solid experience in creating and maintaining responsive and scalable applications. Skilled in front-end and back-end technologies such as HTML5, CSS3, JavaScript, React, Node.js, PHP, and more.<br><br>
-    📈 <b>Performance improvement:</b> Reduced bugs by up to 20% through unit testing and precise fixes.<br>
-    🎯 <b>Usability focus:</b> Collaborated with designers to enhance UX/UI, increasing user satisfaction by 30%.<br>
-    🔧 <b>System maintenance and evolution:</b> Implemented new features and optimized code, reducing load times by up to 25%.<br>
-    📊 <b>Documentation and versioning:</b> Used Git and agile methodologies (Scrum) to ensure organized and efficient deliveries.<br>
-    🤝 <b>Teamwork:</b> Actively participated in multidisciplinary squads, contributing to innovative solutions aligned with client goals.<br>
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Mozilla Builder</h3>
-</div>
-<div class="subTexto">
-  <img class="simbolos" draggable="false" src="./imagens/mozilla.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/bugzilla.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/firefox.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/thunderbird.PNG">
-</div>
-<div class="textoOculto">
-  <p>
-    Bug fixing in <b>Mozilla</b> applications using <b>Bugzilla</b>, a bug tracking tool developed by the Mozilla Foundation.<br>
-    It is used to report, track, and fix issues in software such as <b>Firefox</b>, <b>Thunderbird</b>, and other Mozilla projects.<br>
-    Widely adopted by organizations to manage technical problems and improvements.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> GNU Developer</h3>
-</div>
-<div class="subTexto">
-  <h5>Languages used:</h5>
-  <img class="simbolos" draggable="false" src="./imagens/js.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/rust.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/html.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/css.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/git.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/bash.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/c.PNG">
-</div>
-<div class="textoOculto">
-  <p>
-    Contributed to free software development within the <b>GNU</b> project, created by the <b>Free Software Foundation</b>. Responsibilities included:<br>
-    - Developing and maintaining GNU packages.<br>
-    - Following GNU coding standards for consistency and compatibility.<br>
-    - Using tools like Savannah to manage repositories and discussions.<br>
-    - Collaborating with the community to fix bugs, propose improvements, and review code.<br>
-    - Promoting free software and its principles of freedom to use, modify, and distribute.
-  </p>
-</div>
-      `
-    },
   hardSkills: {
                 title: "Skills",
   description: "Technical knowledge is essential for my professional performance, enabling efficient solutions, assertive decision-making, and constant evolution in the face of technological challenges",
@@ -1153,136 +892,6 @@ formacao: {
         { name: 'Engagement', level: 92 },
         { name: 'Neugier', level: 85 }
         ]
-    },
-  experiencia: {
-      title: 'Erfahrungen',
-      html: `
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Positivo S+</h3>
-</div>
-<div class="subTexto">
-  <span><b>Zweisprachiger Support-Analyst</b> 🗓️ <i>April 2025 - Juli 2025</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Wir fungierten als Backend-Support-Brücke für Firmenkunden im Bankwesen und bearbeiteten Themen wie Zugriffsprobleme auf Anwendungen, Registrierungen und Schulungstreffen zu Kundenanfragen.<br>
-    🎯 Die Bearbeitung erfolgte über E-Mail-Ketten und CRMs, die über Dynamics erstellt wurden.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Tech Mahindra</h3>
-</div>
-<div class="subTexto">
-  <span><b>Kundenservice-Analyst</b> 🗓️ <i>August 2024 - Februar 2025</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Mit dem ERP-System wurden Korrekturen an Produkten, Verpackungen, Rechnungsstellung und Fakturierung durchgeführt.<br>
-    🎯 Analysen wurden mit Swagger und Postman durchgeführt, um API-Informationen in den Formaten HTTP, XML und JSON zu erhalten.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> NTT DATA</h3>
-</div>
-<div class="subTexto">
-  <span><b>PTN1 BPO Jr. Support-Analyst</b> 🗓️ <i>April 2023 - Juni 2024</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Erstellung von Tickets in Movidesk für Kundensupport zu Fehlern, Fragen oder Serviceanfragen.<br>
-    🎯 Korrekturen an Produkten, Verpackungen, Rechnungsstellung und Fakturierung über ERP.<br>
-    🎯 In ServiceNow erhielten wir Details zu Problemen, die gelöst werden mussten, sowie Zugriffs- und Passwort-Reset-Anfragen für Anwendungen wie WMS, Egates, Logan und PPMS.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> TCS - Tata Consultancy Services</h3>
-</div>
-<div class="subTexto">
-  <span><b>Junior IT-Analyst</b> 🗓️ <i>August 2021 - August 2022</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Nutzung von ServiceNow zur Verwaltung von Tickets, die meinem Team zugewiesen wurden, im Zusammenhang mit der Problemlösung in den Systemen GPV-F (Eisenbahn), GPV-M (Bergbau) und GPV-P (Häfen).<br>
-    🎯 Bei Bedarf XML-Code in Anwendungen eingefügt, um Automatisierungsprozesse in Control-M zu korrigieren.<br>
-    🎯 In Eisenbahnbetrieben Control-M verwendet, um tägliche automatisierte Aufgaben zu überwachen und Fehler zu identifizieren.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Capgemini</h3>
-</div>
-<div class="subTexto">
-  <span><b>Zweisprachiger Service Desk-Techniker</b> 🗓️ <i>Oktober 2018 - April 2021</i></span>
-</div>
-<div class="textoOculto">
-  <p>
-    🎯 Tätigkeit als Service Desk-Techniker, verantwortlich für die Identifizierung und Lösung von Netzwerkproblemen der Benutzer. Direkter Support oder Erstellung von Tickets in ServiceNow zur Weiterleitung an das zuständige IT-Team.<br>
-    🎯 Verwendung von Active Directory zur Bearbeitung von Zugriffsanfragen und Verwaltung von Anwendungsinstallationen über Software Center, unter Einhaltung der DSGVO.<br>
-    🎯 VPNs konfiguriert, wenn Benutzer auf Zugriffsprobleme stießen.
-  </p>
-</div>
-
-<br>
-<h1>Freiberufliche Erfahrungen</h1>
-
-<div class="skills" onclick="this.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Webentwickler</h3>
-</div>
-<div class="textoOculto">
-  <p>
-    Webentwickler mit solider Erfahrung in der Erstellung und Wartung von responsiven und skalierbaren Anwendungen. Kenntnisse in Frontend- und Backend-Technologien wie HTML5, CSS3, JavaScript, React, Node.js, PHP und mehr.<br><br>
-    📈 <b>Leistungsverbesserung:</b> Reduzierung von Bugs um bis zu 20 % durch Unit-Tests und präzise Korrekturen.<br>
-    🎯 <b>Usability-Fokus:</b> Zusammenarbeit mit Designern zur Verbesserung von UX/UI, wodurch die Benutzerzufriedenheit um 30 % gesteigert wurde.<br>
-    🔧 <b>Systemwartung und -entwicklung:</b> Implementierung neuer Funktionen und Optimierung des Codes, wodurch die Ladezeiten um bis zu 25 % reduziert wurden.<br>
-    📊 <b>Dokumentation und Versionierung:</b> Einsatz von Git und agilen Methoden (Scrum), um organisierte und effiziente Lieferungen sicherzustellen.<br>
-    🤝 <b>Teamarbeit:</b> Aktive Teilnahme an multidisziplinären Squads, Beitrag zu innovativen Lösungen im Einklang mit den Zielen des Kunden.<br>
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> Mozilla Builder</h3>
-</div>
-<div class="subTexto">
-  <img class="simbolos" draggable="false" src="./imagens/mozilla.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/bugzilla.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/firefox.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/thunderbird.PNG">
-</div>
-<div class="textoOculto">
-  <p>
-    Fehlerbehebung in <b>Mozilla</b>-Anwendungen mit <b>Bugzilla</b>, einem von der Mozilla Foundation entwickelten Bug-Tracking-Tool.<br>
-    Es wird verwendet, um Probleme in Software wie <b>Firefox</b>, <b>Thunderbird</b> und anderen Mozilla-Projekten zu melden, zu verfolgen und zu beheben.<br>
-    Weit verbreitet bei Organisationen zur Verwaltung technischer Probleme und Verbesserungen.
-  </p>
-</div>
-
-<div class="skills" onclick="this.nextElementSibling.nextElementSibling.classList.toggle('show')">
-  <h3><span class="arrow">◀</span> GNU-Entwickler</h3>
-</div>
-<div class="subTexto">
-  <h5>Verwendete Sprachen:</h5>
-  <img class="simbolos" draggable="false" src="./imagens/js.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/rust.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/html.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/css.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/git.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/bash.PNG">
-  <img class="simbolos" draggable="false" src="./imagens/c.PNG">
-</div>
-<div class="textoOculto">
-  <p>
-    Beitrag zur Entwicklung freier Software im Rahmen des <b>GNU</b>-Projekts, das von der <b>Free Software Foundation</b> ins Leben gerufen wurde. Verantwortlichkeiten:<br>
-    - Entwicklung und Wartung von GNU-Paketen.<br>
-    - Einhaltung der GNU-Codierungsstandards für Konsistenz und Kompatibilität.<br>
-    - Nutzung von Tools wie Savannah zur Verwaltung von Repositories und Diskussionen.<br>
-    - Zusammenarbeit mit der Community zur Fehlerbehebung, Verbesserungsvorschlägen und Code-Reviews.<br>
-    - Förderung freier Software und ihrer Prinzipien der Freiheit zur Nutzung, Änderung und Verbreitung.
-  </p>
-</div>
-      `
     },
   hardSkills: {
                 title: "Fähigkeiten",

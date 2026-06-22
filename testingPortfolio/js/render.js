@@ -4,7 +4,7 @@ function renderHomePage() {
     <div class="space-y-8">
       <div class="text-center">
         <div >
-          <img class="hero-avatar" src="../imagens/eu.png" alt="Avatar de Danilo" class="avatar-image">
+          <img class="hero-avatar" src="../assets/images/eu.png" alt="Avatar de Danilo" class="avatar-image">
         </div>
         <h1 class="hero-title">${page.title}</h1>
         <p class="hero-subtitle">${page.subtitle}</p>
@@ -127,7 +127,7 @@ function renderProjetosPage() {
         </div>
         <div class="subTexto">
           <h5>Linguagens utilizadas:</h5>
-          ${item.languages.map(img => `<img class="simbolos" src="./imagens/${img}" draggable="false">`).join("")}
+          ${item.languages.map(img => `<img class="simbolos" src="../assets/images/${img}" draggable="false">`).join("")}
         </div>
         <div class="textoOculto">
           <p>${item.description}</p>
@@ -161,7 +161,7 @@ function renderHardSkills() {
             <div class="description">
               ${cat.skills.map(skill => `
                 <div class="image-wrapper">
-                  <img class="languages" draggable="false" src="./imagens/${skill.image}" alt="${skill.name}">
+                  <img class="languages" draggable="false" src="../assets/images/${skill.image}" alt="${skill.name}">
                   <div class="texto-sobre">${skill.name}</div>
                   ${skill.level ? `<div class="duplas"><h5>${skill.level}</h5></div>` : ""}
                 </div>
@@ -229,7 +229,7 @@ function renderCurriculoPage() {
         <h3><span class="arrow">◀</span> ${t.options.download[lang]}</h3>
       </div>
       <div class="textoOculto">
-        <a href="../imagens/Danilo Andrade Fernandes-CVEN.pdf" download>
+        <a href="../assets/files/Danilo Andrade Fernandes-CVEN.pdf" download>
           <p>${t.options.downloadText[lang]}</p>
         </a>
       </div>
@@ -238,7 +238,7 @@ function renderCurriculoPage() {
         <h3><span class="arrow">◀</span> ${t.options.open[lang]}</h3>
       </div>
       <div class="textoOculto">
-        <a href="../imagens/Danilo Andrade Fernandes-CVEN.pdf" target="_blank">
+        <a href="../assets/files/Danilo Andrade Fernandes-CVEN.pdf" target="_blank">
           <p>${t.options.openText[lang]}</p>
         </a>
       </div>
@@ -247,7 +247,7 @@ function renderCurriculoPage() {
         <h3><span class="arrow">◀</span> ${t.options.view[lang]}</h3>
       </div>
       <div class="textoOculto">
-        <iframe src="../imagens/Danilo Andrade Fernandes-CVEN.pdf" width="100%" height="600px"></iframe>
+        <iframe src="../assets/files/Danilo Andrade Fernandes-CVEN.pdf" width="100%" height="600px"></iframe>
         <p>${t.options.viewText[lang]}</p>
       </div>
 
@@ -340,7 +340,7 @@ function render() {
     <header>
       <div class="header-container">
         <div class="logo" >
-          <img class="logo-image" src="../imagens/indexPerfil.PNG" alt="Logo de Danilo">
+          <img class="logo-image" src="../assets/images/indexPerfil.PNG" alt="Logo de Danilo">
           <span class="logo-text">Danilo Fernandes</span>
         </div>
         
