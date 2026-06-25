@@ -705,3 +705,12 @@ img.languages:hover {
 a {
     text-align: center;
 }
+
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: var(--primary);
+}

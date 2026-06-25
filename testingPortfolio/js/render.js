@@ -335,49 +335,64 @@ function attachCurriculoEvents() {
 }
 
 function render() {
-  document.getElementById('app').innerHTML = `
-    <header>
-      <div class="header-container">
-        <div class="logo">
-          <img class="logo-image" src="../assets/images/indexPerfil.PNG" alt="Logo de Danilo">
-          <span class="logo-text">Danilo Fernandes</span>
-        </div>
-        
-        <nav class="nav-desktop">
-          ${navItems.map(item => `
-            <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
-                    onclick="navigateTo('${item.id}')">
-              <span>${item.icon}</span>
-              <span>${translations[item.id][state.language]}</span>
-            </button>
-          `).join('')}
-        </nav>
-        
-        <div class="controls">
-          <button class="mobile-menu-button" onclick="toggleMobileMenu()">
-            ${state.mobileMenuOpen ? '✕' : '☰'}
-          </button>
-        </div>
-      
-        <nav class="nav-mobile ${state.mobileMenuOpen ? 'open' : ''}">
-          ${navItems.map(item => `
-            <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
-                    onclick="navigateTo('${item.id}')">
-              <span>${item.icon}</span>
-              <span>${translations[item.id][state.language]}</span>
-            </button>
-          `).join('')}
-        </nav>
+  const app = document.getElementById('app');
+
+  // Step 1: show loading indicator
+  app.innerHTML = `
+    <div class="loading-screen">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
-    </header>
-    
-    <main>
-      <div class="page-content">${renderPage()}</div>
-    </main>
+      <p>Loading content...</p>
+    </div>
   `;
 
-  // 👉 Gradient sofort anwenden nach dem Rendern
-  updateGradient();
+  // Step 2: simulate async rendering (if needed)
+  setTimeout(() => {
+    app.innerHTML = `
+      <header>
+        <div class="header-container">
+          <div class="logo">
+            <img class="logo-image" src="../assets/images/indexPerfil.PNG" alt="Logo de Danilo">
+            <span class="logo-text">Danilo Fernandes</span>
+          </div>
+          
+          <nav class="nav-desktop">
+            ${navItems.map(item => `
+              <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
+                      onclick="navigateTo('${item.id}')">
+                <span>${item.icon}</span>
+                <span>${translations[item.id][state.language]}</span>
+              </button>
+            `).join('')}
+          </nav>
+          
+          <div class="controls">
+            <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+              ${state.mobileMenuOpen ? '✕' : '☰'}
+            </button>
+          </div>
+        
+          <nav class="nav-mobile ${state.mobileMenuOpen ? 'open' : ''}">
+            ${navItems.map(item => `
+              <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
+                      onclick="navigateTo('${item.id}')">
+                <span>${item.icon}</span>
+                <span>${translations[item.id][state.language]}</span>
+              </button>
+            `).join('')}
+          </nav>
+        </div>
+      </header>
+      
+      <main>
+        <div class="page-content">${renderPage()}</div>
+      </main>
+    `;
+
+    // Step 3: reapply gradient effect
+    updateGradient();
+  }, 500); // delay for demo, remove if not needed
 }
 
 // Função para trocar idioma
