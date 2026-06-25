@@ -80,7 +80,7 @@ function renderExperienciaPage() {
     <div class="topo">
       <h1 class="exp">${t.title[lang]}</h1>
     </div>
-    <div class="elementsContainer">
+    <div class="elementsContainer" style="text-align: center;">
 
       ${t.jobs.map(job => `
         <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
@@ -126,7 +126,6 @@ function renderProjetosPage() {
           <h3><span class="arrow">◀</span> ${item.name}</h3>
         </div>
         <div class="subTexto">
-          <h5>Linguagens utilizadas:</h5>
           ${item.languages.map(img => `<img class="simbolos" src="../assets/images/${img}" draggable="false">`).join("")}
         </div>
         <div class="textoOculto">
@@ -134,7 +133,7 @@ function renderProjetosPage() {
           <div class="video-wrapper">
             <a href="${item.link}" target="_blank">
               <video class="linkImg" src="${item.video}" muted loop autoplay></video>
-              <div class="video-overlay">Clique para ver o projeto</div>
+              <div class="video-overlay">Click here</div>
             </a>
           </div>
         </div>

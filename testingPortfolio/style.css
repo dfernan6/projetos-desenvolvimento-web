@@ -72,8 +72,9 @@ header {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
     border-bottom: 3px solid transparent; /* define a largura da borda */
-            border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
+    border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    transition: border-image 0.3s ease;
 }
 
 .header-container {
@@ -82,6 +83,8 @@ header {
     padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
+    border-bottom: 3px solid transparent;
+    transition: border-image 0.3s ease;
     align-items: center;
     height: 4rem;
 }
@@ -105,7 +108,7 @@ header {
     font-size: 1.25rem;
 }
 
-        .logo-text {
+.logo-text {
             font-size: 1.25rem;
             font-weight: 700;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -218,12 +221,15 @@ header {
             font-size: 2.5rem;
             text-align: center;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-background-clip: text; /* necessário para navegadores WebKit */
+            color: transparent;
+            transition: background-image 0.3s ease;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 1.5rem;
         }
+
 
         h2 {
             font-size: 1.5rem;
@@ -497,7 +503,7 @@ body.dark-mode .textoOculto {
 }
 
 body.dark-mode .subTexto {
-  color: var(--gray-200);
+  color: #c9c9c9;
 }
 
 .skills {

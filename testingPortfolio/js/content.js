@@ -312,7 +312,7 @@ const content = {
         </p>
       `,
           video: "../assets/videos/saboresdaloloShort.mp4",
-          link: "https://saboresdalolo.vercel.app/"
+          link: "https://saboresdalolo.vercel.app/",
         },
         {
       title: "Aplicativos Mobile",
@@ -338,7 +338,7 @@ const content = {
         </p>
       `,
       video: "../assets/videos/findWeather.mp4",
-      link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
+      link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk",
     },
   {
   name: "Art Pixels Mobile",
@@ -636,6 +636,7 @@ formacao: {
     {
       title: "Professional Projects",
       name: "Sabores da Lolô",
+      linguagens: "Languages used:",
       languages: ["nodejs.PNG","nextjs.PNG","tailwind.PNG","ts.PNG","html.PNG","postman.PNG","mongodb.PNG","react.PNG","vercel.png"],
       description: `
         <p>
@@ -806,7 +807,8 @@ formacao: {
     </p>
   `,
     video: "./imagens/logicas-em-JS.mp4",
-    link: "./pages/logicas-em-js/index.html"
+    link: "./pages/logicas-em-js/index.html",
+    hoverText: "Click to view the project"
   } 
 ]
   },
@@ -970,6 +972,7 @@ formacao: {
     {
       title: "Professionelle Projekte",
       name: "Sabores da Lolô",
+      linguagens: "Verwendete Sprachen:",
       languages: ["nodejs.PNG","nextjs.PNG","tailwind.PNG","ts.PNG","html.PNG","postman.PNG","mongodb.PNG","react.PNG","vercel.png"],
       description: `
         <p>
@@ -1152,7 +1155,8 @@ formacao: {
     </p>
   `,
   video: "./imagens/logicas-em-JS.mp4",
-  link: "./pages/logicas-em-js/index.html"
+  link: "./pages/logicas-em-js/index.html",
+  hoverText: "Klicken, um das Projekt und das zu sehen"
 }
   ]
     },
