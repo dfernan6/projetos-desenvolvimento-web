@@ -80,7 +80,7 @@ function renderExperienciaPage() {
     <div class="topo">
       <h1 class="exp">${t.title[lang]}</h1>
     </div>
-    <div class="elementsContainer" style="text-align: center;">
+    <div class="elementsContainer">
 
       ${t.jobs.map(job => `
         <div class="skills" onclick="const hidden=this.nextElementSibling.nextElementSibling; hidden.classList.toggle('show'); const arrow=this.querySelector('.arrow'); if(arrow) arrow.textContent=hidden.classList.contains('show')?'▼':'◀';">
@@ -338,7 +338,7 @@ function render() {
   document.getElementById('app').innerHTML = `
     <header>
       <div class="header-container">
-        <div class="logo" >
+        <div class="logo">
           <img class="logo-image" src="../assets/images/indexPerfil.PNG" alt="Logo de Danilo">
           <span class="logo-text">Danilo Fernandes</span>
         </div>
@@ -357,24 +357,27 @@ function render() {
           <button class="mobile-menu-button" onclick="toggleMobileMenu()">
             ${state.mobileMenuOpen ? '✕' : '☰'}
           </button>
-      </div>
+        </div>
       
-      <nav class="nav-mobile ${state.mobileMenuOpen ? 'open' : ''}">
-        ${navItems.map(item => `
-          <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
-                  onclick="navigateTo('${item.id}')">
-            <span>${item.icon}</span>
-            <span>${translations[item.id][state.language]}</span>
-          </button>
-        `).join('')}
-      </nav>
+        <nav class="nav-mobile ${state.mobileMenuOpen ? 'open' : ''}">
+          ${navItems.map(item => `
+            <button class="nav-button ${state.currentPage === item.id ? 'active' : ''}" 
+                    onclick="navigateTo('${item.id}')">
+              <span>${item.icon}</span>
+              <span>${translations[item.id][state.language]}</span>
+            </button>
+          `).join('')}
+        </nav>
+      </div>
     </header>
     
     <main>
       <div class="page-content">${renderPage()}</div>
     </main>
-    
   `;
+
+  // 👉 Gradient sofort anwenden nach dem Rendern
+  updateGradient();
 }
 
 // Função para trocar idioma

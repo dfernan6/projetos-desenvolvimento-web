@@ -1,12 +1,12 @@
 // Navigation Items
 const navItems = [
-  { id: 'home', icon: '🏠' },
-  { id: 'experiencia', icon: '💼' },
-  { id: 'hardskills', icon: '💻' },
-  { id: 'softskills', icon: '🌟' },
-  { id: 'projetos', icon: '🎯' },
-  { id: 'formacao', icon: '🎓' },
-  { id: 'curriculo', icon: '📄' }
+  { id: 'home', icon: '<i class="bi bi-house"></i>' },
+  { id: 'experiencia', icon: '<i class="bi bi-briefcase"></i>' },
+  { id: 'hardskills', icon: '<i class="bi bi-laptop"></i>' },
+  { id: 'softskills', icon: '<i class="bi bi-stars"></i>' },
+  { id: 'projetos', icon: '<i class="bi bi-bullseye"></i>' },
+  { id: 'formacao', icon: '<i class="bi bi-mortarboard"></i>' },
+  { id: 'curriculo', icon: '<i class="bi bi-file-earmark-text"></i>' }
 ];
 
 const translations = {
@@ -655,7 +655,7 @@ formacao: {
         <b>Persistent cart synchronization:</b> the cart is synchronized with the backend and stored locally, preventing data loss during navigation.<br>
         </p>
       `,
-      video: "./imagens/saboresdaloloShort.mp4",
+      video: "../assets/videos/saboresdaloloShort.mp4",
       link: "https://saboresdalolo.vercel.app/"
     },{
   title: "Mobile Applications",
@@ -680,7 +680,7 @@ formacao: {
     <i>Install directly on your Android device. Enable “Unknown sources” in settings if necessary.</i>
     </p>
   `,
-  video: "./imagens/findWeather.mp4",
+  video: "../assets/videos/findWeather.mp4",
   link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
 },
 {
@@ -707,7 +707,7 @@ formacao: {
     <i>Install directly on your Android device. Enable “Unknown sources” in settings if necessary.</i>
     </p>
   `,
-  video: "./imagens/art-pixels.mp4",
+  video: "../assets/videos/art-pixels.mp4",
   link: "application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
 },
 {
@@ -726,7 +726,7 @@ formacao: {
     <i>Some sections were implemented only with <b>HTML</b>, which may cause differences in responsiveness and rendering behavior between different parts of the project.</i>
     </p>
   `,
-  video: "./imagens/AppInicialVideo.mp4",
+  video: "../assets/videos/AppInicialVideo.mp4",
   link: "https://dfernan6.vercel.app/"
 },
 {
@@ -742,7 +742,7 @@ formacao: {
     <b><i>There are more explanations about the models in the application.</i></b>
     </p>
   `,
-  video: "./imagens/fundamentosReact.mp4",
+  video: "../assets/videos/fundamentosReact.mp4",
   link: "https://dfernan6-react.vercel.app/"
 },{name: "#7DaysOfCode - React (Aluritter)",
   languages: [
@@ -765,7 +765,7 @@ formacao: {
       The main objective was to apply modern front-end development concepts, integration with external APIs, and responsive styling, creating a functional application that simulates the dynamics of a social network.
     </p>
   `,
-  video: "./imagens/aluritter.mp4",
+  video: "../assets/videos/aluritter.mp4",
   link: "https://aluritter-dfernan6.vercel.app/"
 },{name: "#7DaysOfCode - JS and DOM",
   languages: [
@@ -784,8 +784,8 @@ formacao: {
       These operations are fundamental in applications that interact with databases, such as web systems, apps, and administrative software.
     </p>
   `,
-  video: "./imagens/Aniversarios.mp4",
-  link: "./pages/aniversariantes.html"
+  video: "../assets/videos/Aniversarios.mp4",
+  link: "../pages/aniversariantes.html"
 },{name: "#7DaysOfCode - Logic in JS",
   languages: [
     "css.PNG","js.PNG","html.PNG","bootstrap.PNG"
@@ -806,8 +806,8 @@ formacao: {
       - Input and output of data<br>
     </p>
   `,
-    video: "./imagens/logicas-em-JS.mp4",
-    link: "./pages/logicas-em-js/index.html",
+    video: "../assets/videos/logicas-em-JS.mp4",
+    link: "../pages/logicas-em-js/index.html",
     hoverText: "Click to view the project"
   } 
 ]
@@ -991,7 +991,7 @@ formacao: {
         <b>Persistente Warenkorb-Synchronisation:</b> der Warenkorb wird mit dem Backend synchronisiert und lokal gespeichert, um Datenverlust während der Navigation zu verhindern.<br>
         </p>
       `,
-      video: "./imagens/saboresdaloloShort.mp4",
+      video: "../assets/videos/saboresdaloloShort.mp4",
       link: "https://saboresdalolo.vercel.app/"
     },
     {
@@ -1017,7 +1017,7 @@ formacao: {
     <i>Direkt auf Ihrem Android-Gerät installieren. Aktivieren Sie „Unbekannte Quellen“ in den Einstellungen, falls erforderlich.</i>
     </p>
   `,
-  video: "./imagens/findWeather.mp4",
+  video: "../assets/videos/findWeather.mp4",
   link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
 },
 {
@@ -1044,7 +1044,7 @@ formacao: {
     <i>Direkt auf Ihrem Android-Gerät installieren. Aktivieren Sie „Unbekannte Quellen“ in den Einstellungen, falls erforderlich.</i>
     </p>
   `,
-  video: "./imagens/art-pixels.mp4",
+  video: "../assets/videos/art-pixels.mp4",
   link: "application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
 },{
   title: "Trainingsprojekte",
@@ -1062,7 +1062,7 @@ formacao: {
     <i>Einige Abschnitte wurden nur mit <b>HTML</b> implementiert, was Unterschiede in der Responsivität und im Renderverhalten zwischen verschiedenen Teilen des Projekts verursachen kann.</i>
     </p>
   `,
-  video: "./imagens/AppInicialVideo.mp4",
+  video: "../assets/videos/AppInicialVideo.mp4",
   link: "https://dfernan6.vercel.app/"
 },
 {
@@ -1078,7 +1078,7 @@ formacao: {
     <b><i>Weitere Erklärungen zu den Modellen finden Sie in der Anwendung.</i></b>
     </p>
   `,
-  video: "./imagens/fundamentosReact.mp4",
+  video: "../assets/videos/fundamentosReact.mp4",
   link: "https://dfernan6-react.vercel.app/"
 },{
   name: "#7DaysOfCode - React (Aluritter)",
@@ -1105,7 +1105,7 @@ formacao: {
       und responsives Styling, um eine funktionale Anwendung zu schaffen, die die Dynamik eines sozialen Netzwerks simuliert.
     </p>
   `,
-  video: "./imagens/aluritter.mp4",
+  video: "../assets/videos/aluritter.mp4",
   link: "https://aluritter-dfernan6.vercel.app/"
 },
 {
@@ -1129,8 +1129,8 @@ formacao: {
       Diese Operationen sind grundlegend für Anwendungen, die mit Datenbanken interagieren, wie Websysteme, Apps und Verwaltungssoftware.
     </p>
   `,
-  video: "./imagens/Aniversarios.mp4",
-  link: "./pages/aniversariantes.html"
+  video: "../assets/videos/Aniversarios.mp4",
+  link: "../pages/aniversariantes.html"
 },
 {
   name: "#7DaysOfCode - JS Logik",
@@ -1154,8 +1154,8 @@ formacao: {
       - Ein- und Ausgabe von Daten<br>
     </p>
   `,
-  video: "./imagens/logicas-em-JS.mp4",
-  link: "./pages/logicas-em-js/index.html",
+  video: "../assets/videos/logicas-em-JS.mp4",
+  link: "../pages/logicas-em-js/index.html",
   hoverText: "Klicken, um das Projekt und das zu sehen"
 }
   ]
@@ -1210,8 +1210,8 @@ formacao: {
 }
 // Social Links (iguais em todos os idiomas)
 const socialLinks = [
-  { icon: '🔗', label: 'GitHub', url: 'https://github.com/dfernan6' },
-  { icon: '💼', label: 'LinkedIn', url: 'https://www.linkedin.com/in/dfernan6/' },
-  { icon: '📱', label: 'WhatsApp', url: 'https://wa.me/5516997941722' },
-  { icon: '📧', label: 'Email', url: 'mailto:danilo.afernandes@outlook.com' }
+  { icon: '<i class="bi bi-github"></i>', label: 'GitHub', url: 'https://github.com/dfernan6' },
+  { icon: '<i class="bi bi-linkedin"></i>', label: 'LinkedIn', url: 'https://www.linkedin.com/in/dfernan6/' },
+  { icon: '<i class="bi bi-whatsapp"></i>', label: 'WhatsApp', url: 'https://wa.me/5516997941722' },
+  { icon: '<i class="bi bi-envelope-fill"></i>', label: 'Email', url: 'mailto:danilo.afernandes@outlook.com' }
 ];

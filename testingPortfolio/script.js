@@ -92,12 +92,7 @@
             }
         };
 
-        const socialLinks = [
-            { icon: '🔗', label: 'GitHub', url: 'https://github.com/dfernan6' },
-            { icon: '💼', label: 'LinkedIn', url: 'https://www.linkedin.com/in/dfernan6/' },
-            { icon: '📱', label: 'WhatsApp', url: 'https://wa.me/5516997941722' },
-            { icon: '📧', label: 'Email', url: 'mailto:danilo.afernandes@outlook.com' }
-        ];
+
 
         function renderHomePage() {
             const page = content.home;

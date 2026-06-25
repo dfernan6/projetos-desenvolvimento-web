@@ -19,18 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-window.addEventListener("scroll", () => {
+function updateGradient() {
   const scrollTop = window.scrollY;
   const windowHeight = window.innerHeight;
   const docHeight = document.documentElement.scrollHeight;
 
-  // Progresso da rolagem (0 = topo, 1 = fundo)
   const progress = scrollTop / (docHeight - windowHeight);
-
-  // Ângulo do gradiente: começa em 135° e vai até 315°
   const angle = 135 + (180 * progress);
 
-  // Elementos que terão apenas borda com gradiente
   const borderElements = document.querySelectorAll(
     ".card, .social-button, .textoOculto, .logo-image, .languages, .progress-fill , .video-wrapper, .simbolos"
   );
@@ -41,9 +37,8 @@ window.addEventListener("scroll", () => {
     el.style.transition = "border-image 0.3s ease";
   });
 
-  // Elementos que terão fundo com gradiente
   const backgroundElements = document.querySelectorAll(
-    " .logo-icon, .logo-text, .nav-button.active, .progress-fill"
+    ".logo-icon, .logo-text, .nav-button.active, .progress-fill"
   );
 
   backgroundElements.forEach(el => {
@@ -52,7 +47,6 @@ window.addEventListener("scroll", () => {
   });
 
   const titles = document.querySelectorAll("h1");
-
   titles.forEach(el => {
     el.style.backgroundImage = `linear-gradient(${angle}deg, var(--primary), var(--secondary))`;
     el.style.backgroundClip = "text";
@@ -60,12 +54,18 @@ window.addEventListener("scroll", () => {
     el.style.color = "transparent";
   });
 
-  const headers = document.querySelectorAll("header, .header-container");
+  const headers = document.querySelectorAll("header, .header-container, .skills, h4, h3");
+  headers.forEach(el => {
+    el.style.borderBottom = "3px solid transparent";
+    el.style.borderImage = `linear-gradient(${angle}deg, var(--primary), var(--secondary)) 1`;
+    el.style.borderImageSlice = 1;
+  });
+}
 
-headers.forEach(el => {
-  el.style.borderBottom = "3px solid transparent";
-  el.style.borderImage = `linear-gradient(${angle}deg, var(--primary), var(--secondary)) 1`;
-  el.style.borderImageSlice = 1; // garante que o gradiente seja aplicado corretamente
-});
-});
+// Aufruf beim Scrollen
+window.addEventListener("scroll", updateGradient);
+
+// Aufruf beim Laden der Seite
+window.addEventListener("DOMContentLoaded", updateGradient);
+
 
