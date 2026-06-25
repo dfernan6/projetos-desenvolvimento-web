@@ -73,9 +73,9 @@ const translationsExperiencia = {
       },
       period: { pt: "Abril 2025 - Julho 2025", en: "April 2025 - July 2025", de: "April 2025 - Juli 2025" },
       details: {
-        pt: "🎯 Ponte de suporte back end para clientes bancários PJ, lidando com acessos, cadastros e reuniões instrutivas via Dynamics.",
-        en: "🎯 Backend support bridge for corporate banking clients, handling access issues, registrations, and instructive meetings via Dynamics.",
-        de: "🎯 Backend-Support-Schnittstelle für Firmenkunden, Bearbeitung von Zugangsproblemen, Registrierungen und Besprechungen über Dynamics."
+        pt: "🎯 Ponte de suporte back end para clientes bancários PJ.<br>🎯 Lidando com acessos, cadastros e reuniões instrutivas via Dynamics.",
+        en: "🎯 Backend support bridge for corporate banking clients.<br>🎯 Handling access issues, registrations, and instructive meetings via Dynamics.",
+        de: "🎯 Backend-Support-Schnittstelle für Firmenkunden.<br>🎯 Bearbeitung von Zugangsproblemen, Registrierungen und Besprechungen über Dynamics."
       }
     },
     {
@@ -87,9 +87,9 @@ const translationsExperiencia = {
       },
       period: { pt: "Agosto 2024 - Fevereiro 2025", en: "August 2024 - February 2025", de: "August 2024 - Februar 2025" },
       details: {
-        pt: "🎯 Correções em ERP, embalagens e notas fiscais. 🎯 Uso de Swagger e Postman para APIs em HTTP, XML e JSON.",
-        en: "🎯 ERP corrections, packaging and invoices. 🎯 Using Swagger and Postman for APIs in HTTP, XML and JSON.",
-        de: "🎯 ERP-Korrekturen, Verpackungen und Rechnungen. 🎯 Nutzung von Swagger und Postman für APIs in HTTP, XML und JSON."
+        pt: "🎯 Correções em ERP: produtos, embalagens, notas fiscais.<br>🎯 Uso de Swagger e Postman para APIs em HTTP, XML e JSON.",
+        en: "🎯 ERP corrections: products, packaging, invoices.<br>🎯 Using Swagger and Postman for APIs in HTTP, XML and JSON.",
+        de: "🎯 ERP-Korrekturen: Produkte, Verpackungen, Rechnungen.<br>🎯 Nutzung von Swagger und Postman für APIs in HTTP, XML und JSON."
       }
     },
     {
@@ -101,9 +101,9 @@ const translationsExperiencia = {
       },
       period: { pt: "Abril 2023 - Junho 2024", en: "April 2023 - June 2024", de: "April 2023 - Juni 2024" },
       details: {
-        pt: "🎯 Abertura de tickets no Movidesk. 🎯 Correções em ERP. 🎯 ServiceNow para acessos e redefinições de senha.",
-        en: "🎯 Ticket creation in Movidesk. 🎯 ERP corrections. 🎯 ServiceNow for access and password resets.",
-        de: "🎯 Ticket-Erstellung in Movidesk. 🎯 ERP-Korrekturen. 🎯 ServiceNow für Zugänge und Passwortzurücksetzungen."
+        pt: "🎯 Abertura de tickets no Movidesk.<br>🎯 Correções em ERP.<br>🎯 ServiceNow para acessos e redefinições de senha.",
+        en: "🎯 Ticket creation in Movidesk.<br>🎯 ERP corrections.<br>🎯 ServiceNow for access and password resets.",
+        de: "🎯 Ticket-Erstellung in Movidesk.<br>🎯 ERP-Korrekturen.<br>🎯 ServiceNow für Zugänge und Passwortzurücksetzungen."
       }
     },
     {
@@ -115,9 +115,9 @@ const translationsExperiencia = {
       },
       period: { pt: "Agosto 2021 - Agosto 2022", en: "August 2021 - August 2022", de: "August 2021 - August 2022" },
       details: {
-        pt: "🎯 ServiceNow para chamados GPV-F/M/P. 🎯 Inserção de XML no Control-M. 🎯 Monitoramento ferroviário com Control-M.",
-        en: "🎯 ServiceNow for GPV-F/M/P tickets. 🎯 XML insertion in Control-M. 🎯 Railway monitoring with Control-M.",
-        de: "🎯 ServiceNow für GPV-F/M/P-Tickets. 🎯 XML-Einfügung in Control-M. 🎯 Eisenbahnüberwachung mit Control-M."
+        pt: "🎯 ServiceNow para chamados GPV-F/M/P.<br>🎯 Inserção de XML no Control-M.<br>🎯 Monitoramento ferroviário com Control-M.",
+        en: "🎯 ServiceNow for GPV-F/M/P tickets.<br>🎯 XML insertion in Control-M.<br>🎯 Railway monitoring with Control-M.",
+        de: "🎯 ServiceNow für GPV-F/M/P-Tickets.<br>🎯 XML-Einfügung in Control-M.<br>🎯 Eisenbahnüberwachung mit Control-M."
       }
     },
     {
@@ -129,9 +129,9 @@ const translationsExperiencia = {
       },
       period: { pt: "Outubro 2018 - Abril 2021", en: "October 2018 - April 2021", de: "Oktober 2018 - April 2021" },
       details: {
-        pt: "🎯 Atendimento via ServiceNow. 🎯 Active Directory e Software Center. 🎯 Configuração de VPN.",
-        en: "🎯 Support via ServiceNow. 🎯 Active Directory and Software Center. 🎯 VPN configuration.",
-        de: "🎯 Support über ServiceNow. 🎯 Active Directory und Software Center. 🎯 VPN-Konfiguration."
+        pt: "🎯 Atendimento via ServiceNow.<br>🎯 Active Directory e Software Center.<br>🎯 Configuração de VPN.",
+        en: "🎯 Support via ServiceNow.<br>🎯 Active Directory and Software Center.<br>🎯 VPN configuration.",
+        de: "🎯 Support über ServiceNow.<br>🎯 Active Directory und Software Center.<br>🎯 VPN-Konfiguration."
       }
     }
   ],
@@ -139,40 +139,40 @@ const translationsExperiencia = {
     {
       company: "Web Developer",
       details: {
-        pt: "📈 Melhoria de desempenho, 🎯 Foco em usabilidade, 🔧 Manutenção e evolução, 📊 Documentação e versionamento, 🤝 Trabalho em equipe.",
-        en: "📈 Performance improvement, 🎯 Focus on usability, 🔧 Maintenance and evolution, 📊 Documentation and versioning, 🤝 Teamwork.",
-        de: "📈 Leistungsverbesserung, 🎯 Fokus auf Benutzerfreundlichkeit, 🔧 Wartung und Weiterentwicklung, 📊 Dokumentation und Versionierung, 🤝 Teamarbeit."
+        pt: "📈 Melhoria de desempenho.<br>🎯 Foco em usabilidade.<br>🔧 Manutenção e evolução.<br>📊 Documentação e versionamento.<br>🤝 Trabalho em equipe.",
+        en: "📈 Performance improvement.<br>🎯 Focus on usability.<br>🔧 Maintenance and evolution.<br>📊 Documentation and versioning.<br>🤝 Teamwork.",
+        de: "📈 Leistungsverbesserung.<br>🎯 Fokus auf Benutzerfreundlichkeit.<br>🔧 Wartung und Weiterentwicklung.<br>📊 Dokumentation und Versionierung.<br>🤝 Teamarbeit."
       }
     },
     {
       company: "Mozilla Builder",
       images: [
-      "../assets/images/mozilla.PNG",
-      "../assets/images/bugzilla.PNG",
-      "../assets/images/firefox.PNG",
-      "../assets/images/thunderbird.PNG"
-    ],
+        "../assets/images/mozilla.PNG",
+        "../assets/images/bugzilla.PNG",
+        "../assets/images/firefox.PNG",
+        "../assets/images/thunderbird.PNG"
+      ],
       details: {
-        pt: "Correção de BUGs em aplicações Mozilla via Bugzilla (Firefox, Thunderbird).",
-        en: "Bug fixing in Mozilla applications via Bugzilla (Firefox, Thunderbird).",
-        de: "Fehlerbehebung in Mozilla-Anwendungen über Bugzilla (Firefox, Thunderbird)."
+        pt: "🎯 Correção de BUGs em aplicações Mozilla via Bugzilla.<br>🎯 Projetos como Firefox e Thunderbird.",
+        en: "🎯 Bug fixing in Mozilla applications via Bugzilla.<br>🎯 Projects like Firefox and Thunderbird.",
+        de: "🎯 Fehlerbehebung in Mozilla-Anwendungen über Bugzilla.<br>🎯 Projekte wie Firefox und Thunderbird."
       }
     },
     {
       company: "GNU Developer",
       images: [
-      "../assets/images/js.PNG",
-      "../assets/images/rust.PNG",
-      "../assets/images/html.PNG",
-      "../assets/images/css.PNG",
-      "../assets/images/git.PNG",
-      "../assets/images/bash.PNG",
-      "../assets/images/c.PNG"
-    ],
+        "../assets/images/js.PNG",
+        "../assets/images/rust.PNG",
+        "../assets/images/html.PNG",
+        "../assets/images/css.PNG",
+        "../assets/images/git.PNG",
+        "../assets/images/bash.PNG",
+        "../assets/images/c.PNG"
+      ],
       details: {
-        pt: "Contribuições para o projeto GNU e software livre, seguindo padrões de codificação e colaborando com a comunidade.",
-        en: "Contributions to the GNU project and free software, following coding standards and collaborating with the community.",
-        de: "Beiträge zum GNU-Projekt und zur freien Software, Einhaltung von Codierungsstandards und Zusammenarbeit mit der Community."
+        pt: "🎯 Contribuições para o projeto GNU.<br>🎯 Seguindo padrões de codificação.<br>🎯 Colaboração com a comunidade.",
+        en: "🎯 Contributions to the GNU project.<br>🎯 Following coding standards.<br>🎯 Collaborating with the community.",
+        de: "🎯 Beiträge zum GNU-Projekt.<br>🎯 Einhaltung von Codierungsstandards.<br>🎯 Zusammenarbeit mit der Community."
       }
     }
   ]
@@ -311,7 +311,7 @@ const content = {
         <b>Controle de carrinho com sincronização persistente:</b> o carrinho é sincronizado com o backend e armazenado localmente, evitando perda de dados durante a navegação.<br>
         </p>
       `,
-          video: "./imagens/saboresdaloloShort.mp4",
+          video: "../assets/videos/saboresdaloloShort.mp4",
           link: "https://saboresdalolo.vercel.app/"
         },
         {
@@ -337,7 +337,7 @@ const content = {
         <i>Instale diretamente no seu dispositivo Android. Ative “Fontes desconhecidas” nas configurações se necessário.</i>
         </p>
       `,
-      video: "./imagens/findWeather.mp4",
+      video: "../assets/videos/findWeather.mp4",
       link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
     },
   {
@@ -364,7 +364,7 @@ const content = {
     <i>Instale diretamente no seu dispositivo Android. Ative “Fontes desconhecidas” nas configurações se necessário.</i>
     </p>
   `,
-  video: "./imagens/art-pixels.mp4",
+  video: "../assets/videos/art-pixels.mp4",
   link: "application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
 },
 {
@@ -383,7 +383,7 @@ const content = {
     <i>Algumas seções foram implementadas apenas com <b>HTML</b>, o que pode gerar divergências na responsividade e no comportamento de renderização entre diferentes partes do projeto.</i>
     </p>
   `,
-  video: "./imagens/AppInicialVideo.mp4",
+  video: "../assets/videos/AppInicialVideo.mp4",
   link: "https://dfernan6.vercel.app/"
 },
 {
@@ -399,7 +399,7 @@ const content = {
     <b><i>Têm mais explicações sobre os modelos na aplicação.</i></b>
     </p>
   `,
-  video: "./imagens/fundamentosReact.mp4",
+  video: "../assets/videos/fundamentosReact.mp4",
   link: "https://dfernan6-react.vercel.app/"
 },
 {name: "#7DaysOfCode - React (Aluritter)",
@@ -426,7 +426,7 @@ const content = {
       e estilização responsiva, criando uma aplicação funcional que simula a dinâmica de uma rede social.
     </p>
   `,
-  video: "./imagens/aluritter.mp4",
+  video: "../assets/videos/aluritter.mp4",
   link: "https://aluritter-dfernan6.vercel.app/"
 },
 {name: "#7DaysOfCode - JS e DOM",
@@ -449,7 +449,7 @@ const content = {
       Essas operações são fundamentais em aplicações que interagem com bancos de dados, como sistemas web, apps e softwares administrativos.
     </p>
   `,
-  video: "./imagens/Aniversarios.mp4",
+  video: "../assets/videos/Aniversarios.mp4",
   link: "./pages/aniversariantes.html"
 },{name: "#7DaysOfCode - Lógicas em JS",
   languages: [
@@ -472,7 +472,7 @@ const content = {
       - Entrada e saída de dados<br>
     </p>
   `,
-  video: "./imagens/logicas-em-JS.mp4",
+  video: "../assets/videos/logicas-em-JS.mp4",
   link: "./pages/logicas-em-js/index.html"
 }
       ]

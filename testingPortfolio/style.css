@@ -39,10 +39,19 @@ body.dark-mode {
 
 body.dark-mode header {
   background: rgba(31, 41, 55, 0.8);
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: 3px solid transparent; /* define a largura da borda */
+            border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
 }
 
-body.dark-mode .card,
+body.dark-mode .card {
+    background: linear-gradient(to left, var(--gray-100), var(--gray-50));
+    border: 3px solid transparent; /* define a largura da borda */
+    border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;}
+
+body.dark-mode .skill-level{
+    color: rgb(217, 217, 217);
+}
+
 body.dark-mode .skill-category,
 body.dark-mode footer {
   background: #1f2937;
@@ -56,14 +65,14 @@ body.dark-mode p {
   color: var(--gray-700);
 }
 
-
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 3px solid transparent; /* define a largura da borda */
+            border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
@@ -149,6 +158,7 @@ header {
             border-radius: 0.5rem;
             cursor: pointer;
             font-size: 1.5rem;
+            color:linear-gradient(135deg, var(--primary), var(--secondary)) 1;
         }
 
         @media (min-width: 1000px) {
@@ -198,10 +208,9 @@ header {
 
         .card {
             background: white;
-            border-radius: 1rem;
             padding: 2rem;
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-            border: 1px solid var(--gray-100);
+            border: 3px solid transparent; /* define a largura da borda */
+            border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
             margin-bottom: 1.5rem;
         }
 
@@ -282,8 +291,8 @@ header {
         .quote-box {
             padding: 2rem;
             background: linear-gradient(135deg, #dbeafe, #e9d5ff);
-            border-radius: 1rem;
-            border: 1px solid var(--primary);
+            border: 3px solid transparent; /* define a largura da borda */
+            border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
             margin-bottom: 2rem;
         }
 
@@ -382,8 +391,8 @@ header {
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background: white;
-  border: 1px solid var(--gray-200);
-  border-radius: 0.5rem;
+  border: 3px solid transparent; /* define a largura da borda */
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
   color: var(--gray-700);
   text-decoration: none;
   font-weight: 500;
@@ -403,6 +412,11 @@ footer {
     border-top: 1px solid var(--gray-200);
     margin-top: 5rem;
 }
+
+.footer-text {
+  color: #eeeeee; /* cinza bem claro */
+}
+
 
 .footer-container {
     max-width: 1280px;
@@ -434,7 +448,8 @@ img.simbolos {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    border: solid #006affcb;
+    border: 3px solid transparent; /* define a largura da borda */
+    border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
 }
 
 .simbolos {
@@ -449,9 +464,9 @@ img.simbolos {
   display: none;
   margin-left: 10px;
   background: linear-gradient(to left, var(--gray-100), var(--gray-50), #ffffff);
-  box-shadow: 6px 3px 2px var(--gray-200), 0px 1px 2px var(--gray-200);
   padding: 5px;
-  border-radius: 6px;
+  border: 3px solid transparent; /* define a largura da borda */
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
   color: var(--gray-700);
 }
 
@@ -462,8 +477,8 @@ img.simbolos {
 .textoOculto img {
   width: 150px;
   height: auto;
-  border-radius: 8px;
-  border: 1px solid var(--gray-200);
+  border: 3px solid transparent; /* define a largura da borda */
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
 }
 
 .subTexto {
@@ -479,7 +494,6 @@ img.simbolos {
 body.dark-mode .textoOculto {
   background: linear-gradient(to left, var(--gray-100), var(--gray-50));
   color: var(--gray-600);
-  box-shadow: 6px 3px 2px var(--gray-700), 0px 1px 2px var(--gray-700);
 }
 
 body.dark-mode .subTexto {
@@ -502,8 +516,8 @@ body.dark-mode .subTexto {
 .video-wrapper {
   position: relative;
   display: inline-block;
-  border-radius: 12px;
-  border: solid;
+  border: 3px solid transparent; /* define a largura da borda */
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
   overflow: hidden;
   transition: all 0.4s ease;
   animation: bgCycle 6s infinite alternate;
@@ -571,7 +585,8 @@ body.dark-mode .subTexto {
 .contensImage{
     display: contents;
       overflow: hidden;
-  border-radius: 12px; /* opcional, para suavizar bordas */
+    border: 3px solid transparent; /* define a largura da borda */
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
 }
 
 .contensImage:hover .linkImg {
@@ -601,7 +616,8 @@ img.languages {
   display: block;
   margin: 5px;
   user-select: none;
-  border: solid #cfcfcf;
+  border: 3px solid transparent; /* define a largura da borda */
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
 }
 
 img.languages:hover {

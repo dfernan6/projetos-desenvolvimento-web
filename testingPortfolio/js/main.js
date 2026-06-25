@@ -18,3 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const docHeight = document.documentElement.scrollHeight;
+
+  // Progresso da rolagem (0 = topo, 1 = fundo)
+  const progress = scrollTop / (docHeight - windowHeight);
+
+  // Ângulo do gradiente: começa em 135° e vai até 315°
+  const angle = 135 + (180 * progress);
+
+  // Seleciona todos os elementos que devem ter o efeito
+  const elements = document.querySelectorAll(
+    "header, .card, .quote-box, .skills, .estavel, .social-button, .textoOculto"
+  );
+
+  elements.forEach(el => {
+    el.style.borderImage = `linear-gradient(${angle}deg, var(--primary), var(--secondary)) 1`;
+  });
+});

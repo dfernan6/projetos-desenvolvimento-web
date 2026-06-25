@@ -60,7 +60,7 @@ function renderSoftSkillsPage() {
           <div class="skill-item">
             <div class="skill-header">
               <span class="skill-name">${skill.name}</span>
-              <span>${skill.level}%</span>
+              <span class="skill-level">${skill.level}%</span>
             </div>
             <div class="progress-bar">
               <div class="progress-fill" style="width: ${skill.level}%"></div>
