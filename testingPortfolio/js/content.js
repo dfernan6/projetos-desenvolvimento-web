@@ -293,7 +293,9 @@ const content = {
         {
           title: "Projetos profissionais",
           name: "Sabores da Lolô",
-          languages: ["nodejs.PNG","nextjs.PNG","tailwind.PNG","ts.PNG","html.PNG","postman.PNG","mongodb.PNG","react.PNG","vercel.png"],
+          languages: [
+            "nodejs.PNG","nextjs.PNG","tailwind.PNG","ts.PNG","html.PNG","postman.PNG","mongodb.PNG","react.PNG","vercel.png"
+            ],
           description: `
         <p>
         Sabores da Lolô é uma aplicação web desenvolvida para facilitar o agendamento e gestão de pedidos de confeitaria artesanal.<br>
@@ -331,14 +333,14 @@ const content = {
         🌐 <b>Suporte multilíngue:</b> integração com react-i18next para tradução (ex.: português/inglês).<br>
         🎨 <b>Interface responsiva:</b> design adaptado para mobile e web, com ícones e cores intuitivas.<br><br>
         <b>Download:</b> 📦 <br>
-        <a href="application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk" download>
+        <a href="../assets/apk/application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk" download>
           Clique aqui ou no vídeo para baixar o APK
         </a><br>
         <i>Instale diretamente no seu dispositivo Android. Ative “Fontes desconhecidas” nas configurações se necessário.</i>
         </p>
       `,
       video: "../assets/videos/findWeather.mp4",
-      link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk",
+      link: "../assets/apk/application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk",
     },
   {
   name: "Art Pixels Mobile",
@@ -358,14 +360,14 @@ const content = {
     <b>Reconhecimento de versão anterior para atualização automática</b><br>
     <br>
     <b>Download:</b> 📦 <br>
-    <a href="application-ad18b872-4de1-4799-9260-0506da1169d9.apk" download>
+    <a href="../assets/apk/application-ad18b872-4de1-4799-9260-0506da1169d9.apk" download>
       Clique aqui ou no vídeo para baixar o APK
     </a><br>
     <i>Instale diretamente no seu dispositivo Android. Ative “Fontes desconhecidas” nas configurações se necessário.</i>
     </p>
   `,
   video: "../assets/videos/art-pixels.mp4",
-  link: "application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
+  link: "../assets/apk/application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
 },
 {
   title: "Projetos de treinamento",
@@ -450,7 +452,7 @@ const content = {
     </p>
   `,
   video: "../assets/videos/Aniversarios.mp4",
-  link: "./pages/aniversariantes.html"
+  link: "../assets/pages/aniversariantes.html"
 },{name: "#7DaysOfCode - Lógicas em JS",
   languages: [
     "css.PNG","js.PNG","html.PNG","bootstrap.PNG"
@@ -473,7 +475,7 @@ const content = {
     </p>
   `,
   video: "../assets/videos/logicas-em-JS.mp4",
-  link: "./pages/logicas-em-js/index.html"
+  link: "../assets/pages/logicas-em-js/index.html"
 }
       ]
     },
@@ -674,14 +676,14 @@ formacao: {
     🌐 <b>Multilingual support:</b> integration with react-i18next for translation (e.g., Portuguese/English).<br>
     🎨 <b>Responsive interface:</b> design adapted for mobile and web, with intuitive icons and colors.<br><br>
     <b>Download:</b> 📦 <br>
-    <a href="application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk" download>
+    <a href="../assets/apk/application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk" download>
       Click here or on the video to download the APK
     </a><br>
     <i>Install directly on your Android device. Enable “Unknown sources” in settings if necessary.</i>
     </p>
   `,
   video: "../assets/videos/findWeather.mp4",
-  link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
+  link: "../assets/apk/application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
 },
 {
   name: "Art Pixels Mobile",
@@ -701,14 +703,14 @@ formacao: {
     <b>Recognition of previous version for automatic update</b><br>
     <br>
     <b>Download:</b> 📦 <br>
-    <a href="application-ad18b872-4de1-4799-9260-0506da1169d9.apk" download>
+    <a href="../assets/apk/application-ad18b872-4de1-4799-9260-0506da1169d9.apk" download>
       Click here or on the video to download the APK
     </a><br>
     <i>Install directly on your Android device. Enable “Unknown sources” in settings if necessary.</i>
     </p>
   `,
   video: "../assets/videos/art-pixels.mp4",
-  link: "application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
+  link: "../assets/apk/application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
 },
 {
   title: "Training Projects",
@@ -785,7 +787,7 @@ formacao: {
     </p>
   `,
   video: "../assets/videos/Aniversarios.mp4",
-  link: "../pages/aniversariantes.html"
+  link: "../assets/pages/aniversariantes.html"
 },{name: "#7DaysOfCode - Logic in JS",
   languages: [
     "css.PNG","js.PNG","html.PNG","bootstrap.PNG"
@@ -807,7 +809,7 @@ formacao: {
     </p>
   `,
     video: "../assets/videos/logicas-em-JS.mp4",
-    link: "../pages/logicas-em-js/index.html",
+    link: "../assets/pages/logicas-em-js/index.html",
     hoverText: "Click to view the project"
   } 
 ]
@@ -1011,14 +1013,14 @@ formacao: {
     🌐 <b>Mehrsprachige Unterstützung:</b> Integration mit react-i18next für Übersetzungen (z. B. Portugiesisch/Englisch).<br>
     🎨 <b>Responsive Oberfläche:</b> Design für Mobile und Web angepasst, mit intuitiven Symbolen und Farben.<br><br>
     <b>Download:</b> 📦 <br>
-    <a href="application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk" download>
+    <a href="../assets/apk/application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk" download>
       Hier klicken oder im Video, um die APK herunterzuladen
     </a><br>
     <i>Direkt auf Ihrem Android-Gerät installieren. Aktivieren Sie „Unbekannte Quellen“ in den Einstellungen, falls erforderlich.</i>
     </p>
   `,
   video: "../assets/videos/findWeather.mp4",
-  link: "application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
+  link: "../assets/apk/application-e6e2843b-2d2e-4794-ac5f-f1223ce8e0fd.apk"
 },
 {
   name: "Art Pixels Mobile",
@@ -1038,14 +1040,14 @@ formacao: {
     <b>Erkennung der vorherigen Version für automatische Aktualisierung</b><br>
     <br>
     <b>Download:</b> 📦 <br>
-    <a href="application-ad18b872-4de1-4799-9260-0506da1169d9.apk" download>
+    <a href="../assets/apk/application-ad18b872-4de1-4799-9260-0506da1169d9.apk" download>
       Hier klicken oder im Video, um die APK herunterzuladen
     </a><br>
     <i>Direkt auf Ihrem Android-Gerät installieren. Aktivieren Sie „Unbekannte Quellen“ in den Einstellungen, falls erforderlich.</i>
     </p>
   `,
   video: "../assets/videos/art-pixels.mp4",
-  link: "application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
+  link: "../assets/apk/application-ad18b872-4de1-4799-9260-0506da1169d9.apk"
 },{
   title: "Trainingsprojekte",
   name: "App-Inicial",
@@ -1130,7 +1132,7 @@ formacao: {
     </p>
   `,
   video: "../assets/videos/Aniversarios.mp4",
-  link: "../pages/aniversariantes.html"
+  link: "../assets/pages/aniversariantes.html"
 },
 {
   name: "#7DaysOfCode - JS Logik",
@@ -1155,7 +1157,7 @@ formacao: {
     </p>
   `,
   video: "../assets/videos/logicas-em-JS.mp4",
-  link: "../pages/logicas-em-js/index.html",
+  link: "../assets/pages/logicas-em-js/index.html",
   hoverText: "Klicken, um das Projekt und das zu sehen"
 }
   ]

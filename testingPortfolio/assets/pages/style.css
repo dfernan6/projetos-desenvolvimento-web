@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fcefee; /* rosa algodão-doce */
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff8dc; /* amarelo clarinho */
+  border: 2px solid #ffd6d6; /* rosa pastel */
+  max-width: 800px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.3); /* sombra rosa suave */
+}
+
+.items {
+  background: #e0f7fa; /* azul bebê */
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px dashed #a5d6a7; /* verde menta */
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 15px;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  color: #ba68c8; /* lavanda */
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+}
+
+.linha-verde-clara {
+  background-color: #dcedc8; /* verde limão pastel */
+}
+
+.linha-azulada {
+  background-color: #e1f5fe; /* azul céu claro */
+}
+
+tr:hover {
+  background-color: #ffe0b2; /* pêssego suave */
+}
+
+thead {
+  border: 2px dashed #81d4fa; /* azul pastel */
+  background-color: #b3e5fc; /* azul claro */
+}
+
+.topo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 2px dashed #96b7b0;
+    box-shadow: 16 3 26px #00ffcc;
+    image-rendering: pixelated;
+    border-radius: 0;
+    margin: 5px;
+    padding: 5px;
+}
