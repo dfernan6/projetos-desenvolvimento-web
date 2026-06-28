@@ -1,0 +1,609 @@
+:root, body, html {
+    background-color: #00e8ff; /* fallback background */
+    background-image: url('/imagens/bgTest.gif');
+    background-repeat: no-repeat;
+    background-size: cover;   /* makes the image fill the screen */
+    background-position: center; /* centers the image */           /* makes the background semi-transparent */
+    box-sizing: content-box;
+    display: contents;
+    flex-wrap: wrap;   
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 8px 0px 16px #000000, 0px 0px 0px #000000;
+}
+
+    
+    html{
+
+        height: 100%;
+        align-items: center;
+    
+    }
+
+    @media (min-width: 600px) {
+  body {
+    font-size: 18px;
+    padding: 2rem;
+  }
+}
+
+
+p {
+    font-size: 14px;
+color: rgb(99 99 99);
+text-shadow: black ;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: left;
+margin: auto;
+overflow: hidden;
+}
+
+h1 {
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+margin: auto;
+text-align: left;
+font-family: 'Zen Tokyo Zoo', Impact, Haettenschweiler, sans-serif ;
+font-size: 24px;
+padding: 5px;
+
+}
+h2 {
+color: rgb(255, 255, 255);
+background-color: #000000;
+font-family: 'Zen Tokyo Zoo', Impact, Haettenschweiler, sans-serif ;
+text-align: center;
+margin-left: auto;
+font-size: 18px;
+}
+
+h3 {
+color: rgb(73 73 73);
+font-family: 'Zen Tokyo Zoo', Impact, Haettenschweiler, sans-serif ;
+text-align: left;
+margin-left: 10px;
+font-size: 20px;
+}   
+
+li {
+    font-weight: bold;
+    color: rgb(207, 206, 201);
+    text-align: left;
+}
+
+div#iFooter {
+    background-color: black;
+    margin: auto;
+    width: 100%;
+}
+
+div#iInterface {
+    background-color: #ffffff;
+    width: 100%;
+    position: solid;
+    height: 100%;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    text-align: justify;
+    box-shadow: 8px 0px 16px #000000, 0px 0px 0px #000000
+}
+
+
+div#iCabecalhoInterno {
+    background-color: black;
+    margin: auto;
+    border-style: solid;
+    color: #00e8ff;
+    height: 100%;
+    box-shadow: 0px 0px 6px #000000, 0px 0px 0px #000000;
+}
+footer {
+    color: rgb(255, 255, 255);
+    box-shadow: 8px 0px 16px #000000, 0px 0px 0px #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    clear: both;
+    height: 50px;
+    width: 100%;
+}
+ section {
+    background-color: rgb(28,28,28);
+    width: 100%;
+    margin: auto;
+    }
+
+header {
+    margin: auto;
+}
+img#iWhatsapp {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+img#iGithub {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+img#iLinkedin {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+img#iEmail {
+    width: 23px;
+    height: 23px;
+    padding: 5px;
+}
+img#iFaceBook {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+img#iDev {
+    width: clamp(50px, 50vw, 100px);
+    height: clamp(45px, 50vw, 90px);
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+p#iPrimeiroTxt {
+    text-align: center;
+    font-size: 12px;
+}
+p#iTopo {
+text-align: right;
+color: black;
+margin-bottom: -5px;
+padding-right: 10px;
+font-family: 'Fuggles', cursive;
+font-size: 40px;
+}
+
+nav#iMenu {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    background: #00e8ff;
+    margin: auto;
+}
+    
+nav#iMenu ul {
+    list-style: none;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Zen Tokyo Zoo';
+}
+
+nav#iMenu li {
+    display: inline-flex;
+    background-color: #00e8ff;
+    font-size: 12px;
+    margin: 0px;
+    margin-left: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+a.iNav {
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+}
+
+nav#iMenu li:hover {
+    background-color: black;
+    transition: 1s;    
+}
+
+a.iNav:hover {
+    color: rgb(255, 255, 255);
+}
+nav#iMenu li.ativo {
+    background-color: #089dab;
+    color: #ffffff;
+    transition: none;
+}
+
+a.iNav:active {
+    color:black;
+}
+
+img#iIcone{
+    width: clamp(28px, 50vw, 50px);
+    height: clamp(23px, 50vw, 47px);
+    margin: auto;
+    padding: auto;
+}
+
+p#iFooter{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    font-size: 9px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+}
+
+.texto-sobreposto {
+  position: absolute;
+  top: 50px;
+  left: 212px;
+  color: white;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo semitransparente */
+  padding: 10px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+img#sos {
+    width: 300px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+article {
+  margin: auto;
+  flex-wrap: wrap;
+  overflow: auto;
+  border: 2px solid white;
+  animation: borderGlow 3s infinite alternate;
+}
+
+@keyframes borderGlow {
+  0% {
+    border-color: white;
+    box-shadow: 0 0 5px white, 0 0 10px white;
+  }
+  50% {
+    border-color: #00e8ff;
+    box-shadow: 0 0 10px #00e8ff, 0 0 20px #00e8ff;
+  }
+  100% {
+    border-color: white;
+    box-shadow: 0 0 5px white, 0 0 15px #00e8ff;
+  }
+}
+
+.descricao {
+    max-width: 400px;
+}
+
+a {
+    margin: auto;
+    color: #897d7d;
+    text-decoration: none;
+}
+
+  .contensImage {
+    position: relative;
+    width: 175px;
+    height: 100px; /* defina a altura exata da imagem */
+    margin: auto;
+    border: solid;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  
+.descricaoTexto {
+margin: auto;
+    max-width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(221 221 221);
+    padding: 5px;
+}
+
+img.simbolos {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+    user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  border: solid #cfcfcf;
+
+}
+
+.simbolos {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topo {
+    padding: 5px;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+p.topo {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: auto;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: relative;
+    max-width: 200px;
+    font-size: 10px;
+}
+
+@media (max-width: 900px) {
+ img.coreImg {
+    width: 100%;
+    box-shadow: 1px 0px 5px rgba(10, -4, 8, 0.8);
+}
+}
+
+img.coreImg {
+    width: clamp(80px, 41vh, 300px);
+    box-shadow: 1px 0px 5px rgba(10, -4, 8, 0.8);
+}
+
+.fundoImgIndex{
+    background: linear-gradient(to right, #ffffff,#ffffff, #cfcfcf);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.textoIndex {
+    margin: auto;
+    color: #a7a7a7;
+    text-shadow: 1px 1px 0px rgb(0 0 0);
+    z-index: 10;
+    position: sticky;
+    font-size: clamp(12px, 2.2vh, 20px);
+}
+
+.resumo {
+  padding: 10px;
+}
+
+.itemTexto{
+  padding: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+.skills {
+ cursor: pointer;
+ font-weight: bold;
+ background: linear-gradient(to right, #ffffff,#ffffff, #7e7e7e);
+ margin: 8px 0;
+}
+
+.skills:hover {
+  background: linear-gradient(to right, #7e7e7e,#7e7e7e, #ffffff);
+}
+
+.skills.active {
+  background: linear-gradient(to right, #fcfcfc,#7e7e7e, #ffffff);
+}
+
+.textoOculto {
+  display: none;
+  margin-left: 10px;
+  background: linear-gradient(to left, #ebebeb, #e9e4e4, #ffffff);
+  box-shadow: 6px 3px 2px #000000, 0px 1px 2px #000000;
+  padding: 5px;
+}
+
+.textoOculto img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+    h3:hover {
+color: rgb(255, 255, 255);
+font-family: 'Zen Tokyo Zoo', Impact, Haettenschweiler, sans-serif ;
+text-align: left;
+margin-left: 10px;
+font-size: 20px;
+}   
+
+.subTexto {
+    font-family: verdana;
+    color: rgb(113 113 113);
+    font-size: 12px;
+    margin-top: -25px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+h4 {
+color: rgb(73 73 73);
+font-family: 'Zen Tokyo Zoo', Impact, Haettenschweiler, sans-serif ;
+text-align: left;
+margin-left: 10px;
+font-size: 20px;
+}
+
+.estavel {
+    background: linear-gradient(to right, #fcfcfc,#7e7e7e, #000000);
+    margin: 8px 0;
+}
+
+.contentInterno p {
+    font-size: 16px;
+}
+.contentInterno {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentInternoM {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow {
+    font-size: 8px;
+}
+
+.contensImage{
+    display: contents;
+      overflow: hidden;
+  border-radius: 12px; /* opcional, para suavizar bordas */
+}
+
+.contensImage:hover .linkImg {
+  transform: scale(1.05); /* aumenta 5% */
+}
+
+.description {
+  font-family: verdana;
+  color: rgb(113 113 113);
+  font-size: 12px;
+  margin-top: -25px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+img.languages {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 5px;
+  user-select: none;
+  border: solid #cfcfcf;
+}
+
+img.languages:hover {
+  border: solid #797979;
+  filter: brightness(70%);
+}
+
+.image-wrapper:hover .texto-sobre {
+  opacity: 1;
+}
+
+.texto-sobre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: verdana;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.duplas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkImg{
+    transition: transform 0.4s ease;
+    width: 175px;
+    height: 100px;
+    display: block;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  border: solid;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  animation: bgCycle 6s infinite alternate;
+}
+
+/* Keyframes for background color cycling */
+@keyframes bgCycle {
+  0%   { background-color: white; }
+  33%  { background-color: #00e8ff; }   /* light cyan/blue */
+  66%  { background-color: #082688; }   /* dark navy blue */
+  100% { background-color: white; }
+}
+
+.video-wrapper video {
+  display: block;
+  border-radius: 12px;
+  width: 175px;   /* tamanho inicial */
+  height: 100px;
+  transition: all 0.4s ease;
+}
+
+.video-wrapper:hover video {
+  width: 100%;    /* expande para ocupar toda a largura do container */
+  height: auto;   /* ajusta altura proporcionalmente */
+  max-height: 300px; /* limite máximo de altura */
+  transform: scale(1.05); /* leve zoom para dar destaque */
+  z-index: 1;     /* mantém acima do overlay, mas dentro do fluxo */
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* overlay mais suave */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+}
+
+.video-wrapper:hover .video-overlay {
+  opacity: 1; /* mostra overlay ao passar o mouse */
+}
+
+
+
+

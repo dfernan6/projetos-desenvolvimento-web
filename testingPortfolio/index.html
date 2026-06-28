@@ -20,6 +20,9 @@
 
   <!-- Your custom CSS -->
   <link rel="stylesheet" href="style.css">
+
+      <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
 </head>
 <body>
   <header class="bg-dark text-light p-3 w-100">
@@ -59,5 +62,43 @@
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
+
+      <!-- Firebase Visit Counter Script -->
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyA_aNzHRxZl3f6CY0ay6L_MjKR43XSvmnI",
+    authDomain: "portfolio-929ce.firebaseapp.com",
+    projectId: "portfolio-929ce",
+    storageBucket: "portfolio-929ce.firebasestorage.app",
+    messagingSenderId: "585390882902",
+    appId: "1:585390882902:web:6bd9ebaab20dad952f7bf7",
+    measurementId: "G-G5DJQB9FCP"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const counterRef = db.collection("portfolio").doc("main");
+
+  // Increment counter on every visit
+  counterRef.update({
+    count: firebase.firestore.FieldValue.increment(1)
+  });
+
+  // Show counter only if ?admin=1
+  const el = document.getElementById("counter");
+  const params = new URLSearchParams(window.location.search);
+  const isAdminView = params.get("admin") === "1";
+
+  if (isAdminView) {
+    counterRef.get().then(doc => {
+      if (doc.exists) {
+        el.style.display = "block";
+        el.textContent = "Visits: " + doc.data().count;
+      }
+    }).catch(err => {
+      console.error("Read blocked by rules:", err);
+    });
+  }
+</script>
 </body>
 </html>
