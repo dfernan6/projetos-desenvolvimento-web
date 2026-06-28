@@ -4,7 +4,7 @@ function renderHomePage() {
     <div class="space-y-8">
       <div class="text-center">
         <div >
-          <img class="hero-avatar" src="../assets/images/eu.png" alt="Avatar de Danilo" class="avatar-image">
+          <img class="hero-avatar" src="../assets/images/eu.png" alt="Avatar de Danilo" class="avatar-image" draggable="false">
         </div>
         <h1 class="hero-title">${page.title}</h1>
         <p class="hero-subtitle">${page.subtitle}</p>
@@ -217,6 +217,15 @@ function renderCurriculoPage() {
   const t = translationsCurriculo;
   const lang = state.language;
 
+  // Map each language to its PDF file
+  const cvFiles = {
+    en: "../assets/pdf/Danilo Andrade Fernandes-CVEN.pdf",
+    pt: "../assets/pdf/Danilo Andrade Fernandes-CVPT.pdf",
+    de: "../assets/pdf/Danilo Andrade Fernandes-CVDE.pdf"
+  };
+
+  const cvFile = cvFiles[lang] || cvFiles.en; // fallback to English
+
   return `
     <div class="topo">
       <h1 class="exp">${t.title[lang]}</h1>
@@ -228,7 +237,7 @@ function renderCurriculoPage() {
         <h3><span class="arrow">◀</span> ${t.options.download[lang]}</h3>
       </div>
       <div class="textoOculto">
-        <a href="../assets/files/Danilo Andrade Fernandes-CVEN.pdf" download>
+        <a href="${cvFile}" download>
           <p>${t.options.downloadText[lang]}</p>
         </a>
       </div>
@@ -237,7 +246,7 @@ function renderCurriculoPage() {
         <h3><span class="arrow">◀</span> ${t.options.open[lang]}</h3>
       </div>
       <div class="textoOculto">
-        <a href="../assets/files/Danilo Andrade Fernandes-CVEN.pdf" target="_blank">
+        <a href="${cvFile}" target="_blank">
           <p>${t.options.openText[lang]}</p>
         </a>
       </div>
@@ -246,7 +255,7 @@ function renderCurriculoPage() {
         <h3><span class="arrow">◀</span> ${t.options.view[lang]}</h3>
       </div>
       <div class="textoOculto">
-        <iframe src="../assets/files/Danilo Andrade Fernandes-CVEN.pdf" width="100%" height="600px"></iframe>
+        <iframe src="${cvFile}" width="100%" height="600px"></iframe>
         <p>${t.options.viewText[lang]}</p>
       </div>
 
@@ -353,7 +362,7 @@ function render() {
       <header>
         <div class="header-container">
           <div class="logo">
-            <img class="logo-image" src="../assets/images/indexPerfil.PNG" alt="Logo de Danilo">
+            <img class="logo-foto" src="../assets/images/logo.png" alt="Logo de Danilo" draggable="false">
             <span class="logo-text">Danilo Fernandes</span>
           </div>
           

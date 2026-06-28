@@ -214,6 +214,7 @@ header {
             margin-bottom: 0.25rem;
         }
 
+        
         main {
             width: 100%;
             margin: 0 auto;
@@ -702,6 +703,14 @@ img.languages:hover {
   border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
 }
 
+.logo-foto {
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+  border: 3px solid transparent; /* define a largura da borda */
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
+}
+
 a {
     text-align: center;
 }
@@ -713,4 +722,10 @@ a {
   justify-content: center;
   min-height: 200px;
   color: var(--primary);
+}
+
+.logo-profile {
+  font-family: "Playwrite NZ", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }

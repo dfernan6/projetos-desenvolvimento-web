@@ -28,7 +28,7 @@ function updateGradient() {
   const angle = 135 + (180 * progress);
 
   const borderElements = document.querySelectorAll(
-    ".card, .social-button, .textoOculto, .logo-image, .languages, .progress-fill , .video-wrapper, .simbolos"
+    ".card, .social-button, .textoOculto, .logo-image, .languages, .progress-fill , .video-wrapper, .simbolos, .logo-foto"
   );
 
   borderElements.forEach(el => {
@@ -67,5 +67,3 @@ window.addEventListener("scroll", updateGradient);
 
 // Aufruf beim Laden der Seite
 window.addEventListener("DOMContentLoaded", updateGradient);
-
-
